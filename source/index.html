@@ -9,9 +9,9 @@
   </head>
   <body class="page__body">
     <header class="main-header">
-      <a class="main-header__logo" href="#">
-        <img class="main-header__logo-image" src="#" alt="Логотип Кэт Энерджи" width="70" height="59">
-        <span class="main-header__logo-text logo-text"><b>Cat</b>energy</span>
+      <a class="main-header__logo-link" href="#">
+        <img class="main-header__logo-image" src="#" alt="Логотип Кэт Энерджи" width="33" height="38">
+        <img class="main-header__logo-text logo-text" src="#" alt="" width="101" height="18">
       </a>
       <nav class="main-nav nav">
         <button class="nav__toggle" type="button">
@@ -36,21 +36,21 @@
       <section class="hero">
         <h1 class="hero__title">Функциональное питание для котов</h1>
         <p class="hero__subtitle">Занялся собой? Займись котом!</p>
-        <button class="hero__button button" type="button">Подобрать программу</button>
-        <img class="hero__image" src="#" alt="Продукт Кэт Энерджи" width="552" height="499">
+        <img class="hero__image" src="#" alt="Продукт Кэт Энерджи" width="280" height="270">
+        <a class="button button-general" href="#">Подобрать программу</a>
       </section>
       <section class="catalog">
         <h2 class="visually-hidden">Выбор каталога</h2>
         <ul class="catalog-list">
           <li class="catalog-list__item">
-              <h3 class="catalog-list__item-title">Похудение</h3>
+              <p class="catalog-list__item-title">Похудение</p>
               <p class="catalog-list__item-text">Ваш кот весит больше собаки и почти утратил способность
                 лазить по деревьям? Пора на диету! Cat Energy Slim поможет
                 вашему питомцу сбросить лишний вес.</p>
               <a class="catalog-list__item-link" href="#">Каталог slim</a>
           </li>
           <li class="catalog-list__item">
-              <h3 class="catalog-list__item-title">Набор массы</h3>
+              <p class="catalog-list__item-title">Набор массы</p>
               <p class="catalog-list__item-text">Заработать авторитет среди дворовых котов и даже собак?
                 Серия Cat Energy Pro поможет вашему коту нарастить
                 необходимые мышцы!</p>
@@ -95,31 +95,34 @@
             </fieldset>
           </li>
         </ul>
-        <span class="live-example__cost-title">Затраты на питание:</span>
-        <span class="live-example__cost-price">15 000 РУБ.</span>
+        <div class="live-example__cost-wrap">
+          <span class="live-example__cost-title">Затраты на питание:</span>
+          <span class="live-example__cost-price">15 000 РУБ.</span>
+        </div>
         <div class="live-example__slider">
           <img class="live-example__slider-image" src="#" alt="Полный котик" width="560" height="512">
           <img class="live-example__slider-image" src="#" alt="Худой котик" width="560" height="512">
           <div class="live-example__slider-range">
             <div class="live-example__slider-bar"></div>
-            <div class="live-example__slider-toggle">
-              <button class="live-example__button live-example__button-toleft" type="button"><span class="visually-hidden">Кнопка слайдера влево</span></button>
-              <button class="live-example__button live-example__button-toright" type="button"><span class="visually-hidden">Кнопка слайдера вправо</span></button>
+              <button class="live-example__toggle" type="button"><span class="visually-hidden">Кнопка слайдера</span></button>
             </div>
           </div>
         </div>
       </section>
       <section class="map">
-        <h2 class="visually-hidden">Карта расположения главного штаба кэт энерджи</h2>
+        <h2 class="visually-hidden">Адрес главного штаба кэт энерджи</h2>
         <div class="map__card">
-          <h2 class="map__card-title">Приглашаем к сотрудничеству дилеров!</h2>
+          <p class="map__card-title">Приглашаем к сотрудничеству дилеров!</p>
           <address class="map__card-adress">ул. Большая Конюшенная, д. 19/8</address>
           <address class="map__card-town">Санкт-Петербург</address>
         </div>
+        <img class="map-image" src="#" alt="Карта расположения главного штаба кэт энерджи" width="320" height="362">
       </section>
     </main>
     <footer class="main-footer">
-      <a class="main-footer__logo-text logo-text" href="#">Cat energy</a>
+      <a class="main-footer__logo-link" href="#" >
+        <img class="main-footer__logo-text logo-text" src="#" alt="Логотип Кэт Энерджи" width="128" height="24">
+      </a>
       <ul class="main-footer__socials socials">
         <li class="socials__item">
           <a class="socials__link socials__link--vk" href="#">
@@ -137,7 +140,9 @@
           </a>
         </li>
       </ul>
-      <a class="main-footer__academy-logo" href="#">HTML Academy</a>
+      <a class="main-footer__academy-logo" href="#">
+        <span class="visually-hidden">HTML Academy</span>
+      </a>
     </footer>
   </body>
 </html>
