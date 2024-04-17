@@ -36,7 +36,11 @@
       <section class="hero">
         <h1 class="hero__title">Функциональное питание для котов</h1>
         <p class="hero__subtitle">Занялся собой? Займись котом!</p>
-        <img class="hero__image" src="#" alt="Продукт Кэт Энерджи" width="280" height="270">
+        <picture>
+          <source width="552" height="499" type="image/png" media="(min-width: 1440px)" srcset="images/hero-image-desktop@1x.png 1x, images/hero-image-desktop@2x.png 2x">
+          <source width="709" height="609" type="image/png" media="(min-width: 768px)" srcset="images/hero-image-tablet@1x.png 1x, images/hero-image-tablet@2x.png 2x">
+          <img class="hero__image" src="images/hero-image-mobile@1x.png" srcset="images/hero-image-mobile@2x.png 2x" alt="Продукт Кэт Энерджи" width="280" height="270">
+        </picture>
         <a class="button button-general" href="#">Подобрать программу</a>
       </section>
       <section class="catalog">
@@ -100,8 +104,14 @@
           <span class="live-example__cost-price">15 000 РУБ.</span>
         </div>
         <div class="live-example__slider">
-          <img class="live-example__slider-image" src="#" alt="Полный котик" width="560" height="512">
-          <img class="live-example__slider-image" src="#" alt="Худой котик" width="560" height="512">
+          <picture>
+            <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/cat-fat-tablet(desktop)@1x.png 1x, images/cat-fat-tablet(desktop)@2x.png 2x">
+            <img class="live-example__slider-image" src="images/cat-fat-mobile@1x.png" srcset="images/cat-fat-mobile@2x.png 2x" alt="Полный котик" width="280" height="256">
+          </picture>
+          <picture>
+            <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/cat-slim-tablet(desktop)@1x.png 1x, images/cat-slim-tablet(desktop)@2x.png 2x">
+            <img class="live-example__slider-image" src="images/cat-slim-mobile@1x.png" srcset="images/cat-slim-mobile@2x.png 2x" alt="Худой котик" width="280" height="256">
+          </picture>
           <div class="live-example__slider-range">
             <div class="live-example__slider-bar"></div>
               <button class="live-example__toggle" type="button"><span class="visually-hidden">Кнопка слайдера</span></button>
