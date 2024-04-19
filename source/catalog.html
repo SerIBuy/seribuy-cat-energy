@@ -225,12 +225,16 @@
     </section>
     <section class="map">
       <h2 class="visually-hidden">Адрес главного штаба кэт энерджи</h2>
-      <div class="map__card map__card--catalog">
+      <div class="map__card">
         <p class="map__card-title">Приглашаем к сотрудничеству дилеров!</p>
         <address class="map__card-adress">ул. Большая Конюшенная, д. 19/8</address>
         <address class="map__card-town">Санкт-Петербург</address>
       </div>
-      <img class="map-image" src="#" alt="Карта расположения главного штаба кэт энерджи" width="320" height="362">
+      <picture>
+        <source width="1440" height="400" type="image/png" media="(min-width: 1440px)" srcset="images/map-desktop@1x.png 1x, images/map-desktop@2x.png 2x">
+        <source width="768" height="400" type="image/png" media="(min-width: 768px)" srcset="images/map-tablet@1x.png 1x, images/map-tablet@2x.png 2x">
+        <img class="map-image" src="images/map-mobile@1x.png" srcset="images/map-mobile@2x.png 2x" alt="Карта расположения главного штаба кэт энерджи" width="320" height="362">
+      </picture>
     </section>
   </main>
   <footer class="main-footer">
