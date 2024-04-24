@@ -1,17 +1,17 @@
-.hero{
+.hero {
   font-family: $headers-font;
   color: #ffffff;
   background-color: #55dc62;
 }
 
-.hero__title{
+.hero__title {
   @include mp-reset();
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
 }
 
-.hero__subtitle{
+.hero__subtitle {
   font-size: 14px;
   line-height: 14px;
 }
