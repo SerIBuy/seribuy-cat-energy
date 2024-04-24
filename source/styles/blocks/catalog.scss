@@ -1,0 +1,34 @@
+.catalog{
+  font-family: $headers-font;
+  background-color: inherit;
+}
+
+.catalog__list{
+  @include list-style-reset();
+}
+
+.catalog__item{
+
+  background-color: #f2f2f2;
+
+  .catalog__item-title{
+    text-transform: uppercase;
+    font-size: 24px;
+    line-height: 37px;
+  }
+
+  .catalog__item-text{
+    font-family: $general-font;
+    line-height: 18px;
+    color: #444444;
+  }
+
+  .catalog__item-link{
+    display: block;
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 16px;
+    text-decoration: none;
+    color: #000000;
+  }
+}

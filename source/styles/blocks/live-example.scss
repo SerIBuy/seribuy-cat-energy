@@ -1,0 +1,36 @@
+.live-example{
+  background-color: #eaeaea;
+  font-family: $headers-font;
+
+  &__title{
+    @include mp-reset();
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 40px;
+  }
+
+  &__text{
+   font-family: $general-font;
+   color: #444444;
+  }
+
+  &__facts-list{
+    @include list-style-reset();
+  }
+
+  &__facts-legend{
+    font-family: $general-font;
+    font-size: 12px;
+    line-height: 12px;
+    color: #444444;
+  }
+
+  &__facts-text{
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  &__costs-wrap{
+    line-height: 20px;
+  }
+}

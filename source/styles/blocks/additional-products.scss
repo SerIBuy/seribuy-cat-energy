@@ -1,0 +1,37 @@
+.additional-products{
+background-color: #ffffff;
+
+  &__title{
+    font-family: $headers-font;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  &__list{
+    @include list-style-reset();
+  }
+
+  &__item-title{
+    @include mp-reset();
+    font-size: 16px;
+    line-height: 16px;
+    color: #222222;
+  }
+
+  &__name,
+  &__cost{
+    font-size: 14px;
+    line-height: 14px;
+  }
+
+  &__order-all{
+    background-color: rgba(104, 183, 56, 0.85);
+  }
+
+  &__text{
+    font-size: 16px;
+    line-height: 20px;
+    color: #ffffff;
+  }
+}

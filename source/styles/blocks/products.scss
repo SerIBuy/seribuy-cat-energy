@@ -1,0 +1,32 @@
+.products{
+background-color: #ffffff;
+
+  &__title{
+    font-family: $headers-font;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  &__list{
+    @include list-style-reset();
+  }
+
+  &__title-link,
+  &__more-title{
+    font-family: $headers-font;
+    font-weight: 400;
+    text-decoration: none;
+    color: #222222;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  &__item-details,
+  &__item-detail,
+  &__more-text {
+    @include mp-reset();
+    font-size: 12px;
+    line-height: 16px;
+  }
+}

@@ -1,7 +1,8 @@
 /* GLOBAL */
 @import "./common/variables.scss";
-@import "./common/global.scss";
+@import "./common/mixins.scss";
 @import "./common/fonts.scss";
+@import "./common/global.scss";
 @import "./common/visually-hidden.scss";
 
 /* BLOCKS */
@@ -24,4 +25,5 @@
 @import "./blocks/button-show-all.scss";
 @import "./blocks/additional-products.scss";
 @import "./blocks/subscribe.scss";
-@import "./blocks/buttton-subscribe.scss";
+@import "./blocks/button-subscribe.scss";
+

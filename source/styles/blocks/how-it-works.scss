@@ -1,0 +1,18 @@
+.how-it-works{
+
+}
+
+.how-it-works__title {
+  @include mp-reset();
+  font-family: $headers-font;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+}
+
+.how-it-works__list{
+  @include list-style-reset();
+  .how-it-works__text{
+    color: #444444;
+  }
+}
