@@ -6,6 +6,11 @@
     font-weight: 400;
     font-size: 36px;
     line-height: 36px;
+
+    @media (min-width: $viewport-tablet) {
+      font-size: 60px;
+      line-height: 60px;
+    }
   }
 
   &__list {
@@ -20,6 +25,11 @@
     color: #222222;
     font-size: 16px;
     line-height: 20px;
+
+    @media (min-width: $viewport-tablet) {
+      font-size: 20px;
+      line-height: 24px;
+    }
   }
 
   &__item-details,
@@ -28,5 +38,17 @@
     @include mp-reset();
     font-size: 12px;
     line-height: 16px;
+    color: #444444;
+
+    @media (min-width: $viewport-tablet) {
+      font-size: 16px;
+      line-height: 20px;
+    }
+  }
+
+  &__more-text {
+    @media (min-width: $viewport-tablet) {
+      line-height: 18px;
+    }
   }
 }
