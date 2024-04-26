@@ -18,6 +18,12 @@
   @include list-style-reset();
 }
 
+.products__item {
+  @media (min-width: $viewport-tablet) {
+    background-image: linear-gradient(#ffffff 81px, #f2f2f2 81px);
+  }
+}
+
 .products__title-link,
 .products__more-title {
   font-family: $headers-font;
