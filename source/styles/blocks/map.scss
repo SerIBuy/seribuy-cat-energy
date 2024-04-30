@@ -4,6 +4,9 @@
 
 .map-image {
   display: block;
+  object-fit: contain;
+  width: 100%;
+  height: auto;
 }
 
 .map__card-title {

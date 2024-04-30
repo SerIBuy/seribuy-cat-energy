@@ -2,31 +2,17 @@
   font-family: $headers-font;
   color: #ffffff;
   text-transform: uppercase;
+  background-image: image-set(url("../../images/hero-cat-mobile@1x.jpg") 1x, url("../../images/hero-cat-mobile@2x.jpg") 2x);
   background-repeat: no-repeat;
   background-size: 100% auto;
-
-  @media (max-width: 767px) and (min-resolution: 1dppx) {
-    background-image: url("../../images/hero-cat-mobile@1x.jpg");
-  }
-
-  @media (max-width: 767px) and (min-resolution: 2dppx) {
-    background-image: url("../../images/hero-cat-mobile@2x.jpg");
-  }
 
   @media (min-width: $viewport-tablet) {
     background-image: none;
   }
 
-  @media (min-width: $viewport-desktop) and (min-resolution: 1dppx) {
+  @media (min-width: $viewport-desktop) {
     background-color: #ffffff;
-    background-image: url("../../images/hero-cat-desktop@1x.jpg");
-    background-size: 50% auto;
-    background-position: right 0;
-  }
-
-  @media (min-width: $viewport-desktop) and (min-resolution: 2dppx) {
-    background-color: #ffffff;
-    background-image: url("../../images/hero-cat-desktop@2x.jpg");
+    background-image: image-set(url("../../images/hero-cat-desktop@1x.jpg") 1x, url("../../images/hero-cat-desktop@2x.jpg") 2x);
     background-size: 50% auto;
     background-position: right 0;
   }
