@@ -15,7 +15,7 @@
 
 <body class="page__body">
   <header class="main-header">
-    <div class="main-header__header">
+    <div class="main-header__header container">
       <a class="main-header__logo-link-image" href="index.html">
         <span class="visually-hidden">Логотип-картинка Кэт Энерджи</span>
         <picture>
@@ -36,7 +36,6 @@
       </button>
     </div>
     <nav class="main-nav nav main-nav--open">
-      <div class="nav__wrapper">
         <ul class="nav__list">
           <li class="nav__list-item">
             <a class="main-nav__link nav__link main-nav__link--current" href="index.html">Главная</a>
@@ -48,21 +47,20 @@
             <a class="main-nav__link nav__link" href="#">Подбор программы</a>
           </li>
         </ul>
-      </div>
     </nav>
   </header>
   <main class="main-index">
     <section class="hero">
-      <h1 class="hero__title">Функциональное питание для котов</h1>
+        <h1 class="hero__title">Функциональное<br>питание для котов</h1>
       <p class="hero__subtitle">Занялся собой? Займись котом!</p>
       <picture>
         <source width="552" height="499" type="image/png" media="(min-width: 1440px)" srcset="images/hero-image-desktop@1x.png 1x, images/hero-image-desktop@2x.png 2x">
         <source width="709" height="609" type="image/png" media="(min-width: 768px)" srcset="images/hero-image-tablet@1x.png 1x, images/hero-image-tablet@2x.png 2x">
         <img class="hero__image" src="images/hero-image-mobile@1x.png" srcset="images/hero-image-mobile@2x.png 2x" alt="Баночка продукции Кэт Энерджи" width="280" height="270">
       </picture>
-      <a class="button button-general button-general--find-programm" href="#">Подобрать программу</a>
+      <a class="button button-general button-general--find-programm button-general--mobile" href="#">Подобрать программу</a>
     </section>
-    <section class="catalog">
+    <section class="catalog container">
       <h2 class="visually-hidden">Выбор каталога</h2>
       <ul class="catalog__list">
         <li class="catalog__item catalog__item--slim">

@@ -1,11 +1,19 @@
 .main-header {
   background-color: #ffffff;
+
+  @media (min-width: $viewport-tablet) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 }
 
 .main-header__header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding-top: 13px;
+  padding-bottom: 15px;
 }
 
 .main-header__logo-image {

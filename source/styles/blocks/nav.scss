@@ -2,7 +2,10 @@
   @include list-style-reset();
   display: flex;
   flex-direction: column;
-  align-items: center;
+
+  @media (min-width: $viewport-tablet) {
+    flex-direction: row;
+  }
 }
 
 .nav__link {
@@ -14,4 +17,25 @@
   line-height: 20px;
   color: #000000;
   padding: 22px 10px 24px;
+}
+
+.nav__list-item {
+  width: 100%;
+  text-align: center;
+
+  @media (min-width: $viewport-tablet) {
+    width: auto;
+  }
+}
+
+.nav__list-item::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #e6e6e6;
+
+  @media (min-width: $viewport-tablet) {
+    display: none;
+  }
 }
