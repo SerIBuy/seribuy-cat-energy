@@ -6,6 +6,20 @@
   background-color: #f2f2f2;
 }
 
+.main-footer__logo-link-svg {
+  fill: #111111;
+}
+
+.main-footer__logo-link {
+  &:hover .main-footer__logo-link-svg {
+      fill: #3e3e3e;
+  }
+
+  &:active .main-footer__logo-link-svg {
+    fill: #6b6b6b;
+}
+}
+
 .main-footer__academy-logo-text-link {
   text-decoration: none;
 }
@@ -25,19 +39,17 @@
   justify-content: space-between;
 }
 
-.main-footer__academy-logo-picture-link {
-  display: block;
-  mask-image: url("../../icons/stack.svg#htmlacademy-logo");
-  background-color: #666666;
-  width: 27px;
-  height: 34px;
+.main-footer__academy-logo-svg {
+  fill: #666666;
+}
 
-  &:hover,
-  &:focus-visible {
-    background-color: #68b738;
+.main-footer__academy-logo-picture-link {
+
+  &:hover .main-footer__academy-logo-svg{
+    fill: #68b738;
   }
 
-  &:active {
-    background-color: rgba(104, 183, 56, 0.3);
+  &:active .main-footer__academy-logo-svg{
+    fill: rgba(104, 183, 56, 0.3);
   }
 }
