@@ -1,9 +1,14 @@
+.how-it-works {
+  margin-bottom: 49px;
+}
+
 .how-it-works__title {
   @include mp-reset();
   font-family: $headers-font;
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
+  margin-bottom: 40px;
 
   @media (min-width: $viewport-tablet) {
     font-size: 60px;
@@ -16,20 +21,21 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
-}
-
-.how-it-works__text {
-  color: #444444;
-  margin-left: 80px;
+  counter-reset: list-number 0;
 
   @media (min-width: $viewport-tablet) {
-    font-size: 16px;
-    line-height: 24px;
+    flex-flow: wrap;
+    gap: 37px 153px;
+  }
+
+  @media (min-width: $viewport-desktop) {
+    gap: 94px;
   }
 }
 
 .how-it-works__item {
   position: relative;
+  width: 230px;
 
   &::before {
     content: "";
@@ -41,6 +47,7 @@
     @media (min-width: $viewport-tablet) {
       width: 80px;
       height: 80px;
+      top: 40px;
     }
   }
 
@@ -51,6 +58,11 @@
     left: 15px;
     width: 25px;
     height: 30px;
+
+    @media (min-width: $viewport-tablet) {
+      top: 67px;
+      left: 27px;
+    }
   }
 }
 
@@ -68,4 +80,32 @@
 
 .how-it-works__item--clock::after {
   background-image: url("../../icons/stack.svg#how-it-works-clock");
+}
+
+.how-it-works__text {
+  position: relative;
+  color: #444444;
+  margin-left: 80px;
+  width: 200px;
+  counter-increment: list-number 1;
+
+  @media (min-width: $viewport-tablet) {
+    font-size: 16px;
+    line-height: 24px;
+    margin-left: 0;
+    padding: 151px 0 57px;
+    width: 245px;
+    z-index: 1;
+
+    &::before {
+      position: absolute;
+      content: counter(list-number);
+      font-family: $headers-font;
+      font-size: 280px;
+      color: #f2f2f2;
+      top: 115px;
+      margin-left: 118px;
+      z-index: -1;
+    }
+  }
 }

@@ -1,35 +1,56 @@
 .catalog {
+  position: relative;
   font-family: $headers-font;
   background-color: inherit;
+  margin-bottom: 20px;
+  z-index: 1;
 }
 
 .catalog__list {
   @include list-style-reset();
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  @media (min-width: $viewport-tablet) {
+    gap: 30px;
+  }
+
+  @media (min-width: $viewport-desktop) {
+    flex-direction: row;
+    gap: 80px;
+  }
 }
 
 .catalog__item {
   position: relative;
   background-color: #f2f2f2;
   padding: 30px 20px 18px;
-  margin-bottom: 20px;
   width: 280px;
+  box-sizing: border-box;
 
   &::before {
     position: absolute;
     content: "";
     width: 50px;
     height: 50px;
+    top: 24px;
+    left: 20px;
     background-color: #68b738;
     border-radius: 50%;
 
     @media (min-width: $viewport-tablet) {
       width: 200px;
       height: 200px;
+      top: 81px;
+      left: 445px;
     }
 
     @media (min-width: $viewport-desktop) {
       width: 100px;
       height: 100px;
+      top: 41px;
+      left: 52px;
     }
   }
 
@@ -40,21 +61,37 @@
     content: "";
     background-repeat: no-repeat;
   }
+
+  @media (min-width: $viewport-tablet) {
+    width: 708px;
+    padding: 77px 0 53px 52px;
+  }
+
+  @media (min-width: $viewport-desktop) {
+    width: 570px;
+    padding: 77px 0 55px 52px;
+  }
 }
 
 .catalog__item--slim::after {
   background-image: url("../../icons/stack.svg#catalog-cat-slim");
   width: 36px;
   height: 50px;
+  top: 21px;
+  left: 27px;
 
   @media (min-width: $viewport-tablet) {
     width: 140px;
     height: 194px;
+    top: 81px;
+    left: 445px;
   }
 
   @media (min-width: $viewport-desktop) {
     width: 70px;
     height: 97px;
+    top: 41px;
+    left: 67px;
   }
 }
 
@@ -62,15 +99,21 @@
   background-image: url("../../icons/stack.svg#catalog-cat-pro");
   width: 67px;
   height: 28px;
+  top: 35px;
+  left: 12px;
 
   @media (min-width: $viewport-tablet) {
     width: 268px;
     height: 112px;
+    top: 135px;
+    left: 411px;
   }
 
   @media (min-width: $viewport-desktop) {
     width: 134px;
     height: 56px;
+    top: 67px;
+    left: 33px;
   }
 }
 
@@ -79,11 +122,17 @@
   font-size: 24px;
   line-height: 37px;
   margin: 0;
-  margin-left: 90px;
+  padding-left: 90px;
 
   @media (min-width: $viewport-tablet) {
     font-size: 36px;
     line-height: 36px;
+    padding: 0;
+  }
+
+  @media (min-width: $viewport-desktop) {
+    padding-left: 162px;
+    margin-bottom: 73px;
   }
 }
 
@@ -91,11 +140,17 @@
   font-family: $general-font;
   line-height: 18px;
   color: #444444;
+  width: 227px;
 
   @media (min-width: $viewport-tablet) {
     font-size: 16px;
     line-height: 24px;
     color: #000000;
+    width: 340px;
+  }
+
+  @media (min-width: $viewport-desktop) {
+    width: 457px;
   }
 }
 

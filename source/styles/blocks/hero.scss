@@ -1,4 +1,5 @@
 .hero {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -6,20 +7,27 @@
   color: #ffffff;
   background-image: image-set(url("../../images/hero-cat-mobile@1x.jpg") 1x, url("../../images/hero-cat-mobile@2x.jpg") 2x);
   background-repeat: no-repeat;
-  background-size: 100% auto;
+  background-size: 320px 60%;
+  background-position: center 0;
   margin-bottom: 20px;
+  z-index: 1;
 
   @media (min-width: $viewport-tablet) {
     background-image: none;
     align-items: start;
     padding-left: 120px;
+    margin-bottom: 0;
+    padding-bottom: 526px;
   }
 
   @media (min-width: $viewport-desktop) {
+    position: relative;
+    padding-bottom: 184px;
     background-color: #ffffff;
     background-image: image-set(url("../../images/hero-cat-desktop@1x.jpg") 1x, url("../../images/hero-cat-desktop@2x.jpg") 2x);
     background-size: 50% auto;
     background-position: right 0;
+    margin-bottom: 82px;
   }
 }
 
@@ -39,6 +47,10 @@
     padding-top: 65px;
     text-align: left;
   }
+
+  @media (min-width: $viewport-desktop) {
+    padding-top: 224px;
+  }
 }
 
 .hero__subtitle {
@@ -56,4 +68,16 @@
 
 .hero__image {
   display: block;
+
+  @media (min-width: $viewport-tablet) {
+    position: absolute;
+    top: 266px;
+    left: 50px;
+    z-index: -1;
+  }
+
+  @media (min-width: $viewport-desktop) {
+    top: 143px;
+    left: 557px;
+  }
 }

@@ -4,6 +4,18 @@
   align-items: center;
   gap: 40px;
   background-color: #f2f2f2;
+  padding: 40px 20px;
+
+  @media (min-width: $viewport-tablet) {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 0;
+    padding-inline: 30px;
+  }
+
+  @media (min-width: $viewport-desktop) {
+    padding-inline: 110px;
+  }
 }
 
 .main-footer__logo-link-svg {
@@ -36,7 +48,14 @@
 
 .main-footer__academy-logo-wrapper {
   display: flex;
+  align-items: center;
   justify-content: space-between;
+  margin-top: 2px;
+  width: 280px;
+
+  @media (min-width: $viewport-tablet) {
+    width: 168px;
+  }
 }
 
 .main-footer__academy-logo-svg {
