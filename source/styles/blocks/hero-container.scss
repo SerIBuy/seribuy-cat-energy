@@ -1,0 +1,5 @@
+.hero-container {
+  @media (min-width: $viewport-desktop) {
+    background: linear-gradient(to right, #ffffff 50%, #5ea532 50%);
+  }
+}

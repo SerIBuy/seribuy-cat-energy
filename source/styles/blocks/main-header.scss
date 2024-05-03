@@ -5,16 +5,11 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-inline: 30px;
   }
 
   @media (min-width: $viewport-desktop) {
-    position: absolute;
-    top: 33px;
-    z-index: 2;
     background-color: transparent;
     width: 1220px;
-    margin-inline: 110px;
   }
 }
 
