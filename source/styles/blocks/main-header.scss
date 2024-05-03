@@ -5,58 +5,66 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-inline: 30px;
   }
 
   @media (min-width: $viewport-desktop) {
     position: absolute;
     top: 33px;
-    z-index: 1;
+    z-index: 2;
     background-color: transparent;
+    width: 1220px;
+    margin-inline: 110px;
   }
 }
 
 .main-header__header {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   padding-top: 13px;
   padding-bottom: 15px;
+  width: 280px;
+  margin: 0 auto;
 
   @media (min-width: $viewport-tablet) {
     justify-content: start;
+    width: 174px;
+    margin: 0;
+  }
+
+  @media (min-width: $viewport-tablet) {
+    width: 202px;
+  }
+}
+
+.main-header__logo-link {
+  display: flex;
+  align-items: center;
+  gap: 56px;
+
+  &:hover,
+  &:focus-visible {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
+  @media (min-width: $viewport-tablet) {
+    gap: 13px;
+  }
+
+  @media (min-width: $viewport-desktop) {
+    gap: 14px;
   }
 }
 
 .main-header__logo-image {
   display: block;
-
-  &:hover,
-  &:focus-visible {
-    opacity: 0.8;
-  }
-
-  &:active {
-    opacity: 0.6;
-  }
-
-  @media (min-width: $viewport-tablet) {
-    margin-right: 13px;
-  }
-
-  @media (min-width: $viewport-desktop) {
-    margin-right: 14px;
-  }
 }
 
 .main-header__logo-text {
   display: block;
-
-  &:hover,
-  &:focus-visible {
-    opacity: 0.8;
-  }
-
-  &:active {
-    opacity: 0.6;
-  }
+  margin-right: 73px;
 }

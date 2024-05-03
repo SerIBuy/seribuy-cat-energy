@@ -4,8 +4,9 @@
   flex-direction: column;
 
   @media (min-width: $viewport-tablet) {
-    flex-direction: row;
-    min-width: 450px;
+    flex-flow: wrap;
+    justify-content: end;
+    min-width: 430px;
   }
 
   @media (min-width: $viewport-tablet) {

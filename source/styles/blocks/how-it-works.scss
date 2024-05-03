@@ -1,5 +1,5 @@
 .how-it-works {
-  margin-bottom: 49px;
+  margin-bottom: 67px;
 }
 
 .how-it-works__title {
@@ -25,17 +25,19 @@
 
   @media (min-width: $viewport-tablet) {
     flex-flow: wrap;
-    gap: 37px 153px;
+    gap: 37px 148px;
   }
 
   @media (min-width: $viewport-desktop) {
-    gap: 94px;
+    gap: 33px;
   }
 }
 
 .how-it-works__item {
   position: relative;
-  width: 230px;
+  display: flex;
+  align-items: center;
+  width: 280px;
 
   &::before {
     content: "";
@@ -54,8 +56,8 @@
   &::after {
     content: "";
     position: absolute;
-    top: 16px;
-    left: 15px;
+    top: 13px;
+    left: 17px;
     width: 25px;
     height: 30px;
 
@@ -85,6 +87,7 @@
 .how-it-works__text {
   position: relative;
   color: #444444;
+  margin: 0;
   margin-left: 80px;
   width: 200px;
   counter-increment: list-number 1;
@@ -103,7 +106,7 @@
       font-family: $headers-font;
       font-size: 280px;
       color: #f2f2f2;
-      top: 115px;
+      top: 127px;
       margin-left: 118px;
       z-index: -1;
     }

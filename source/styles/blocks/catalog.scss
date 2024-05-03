@@ -4,6 +4,10 @@
   background-color: inherit;
   margin-bottom: 20px;
   z-index: 1;
+
+  @media (min-width: $viewport-tablet) {
+    margin-bottom: 40px;
+  }
 }
 
 .catalog__list {
@@ -83,8 +87,8 @@
   @media (min-width: $viewport-tablet) {
     width: 140px;
     height: 194px;
-    top: 81px;
-    left: 445px;
+    top: 70px;
+    left: 475px;
   }
 
   @media (min-width: $viewport-desktop) {
@@ -106,7 +110,7 @@
     width: 268px;
     height: 112px;
     top: 135px;
-    left: 411px;
+    left: 420px;
   }
 
   @media (min-width: $viewport-desktop) {
@@ -122,6 +126,7 @@
   font-size: 24px;
   line-height: 37px;
   margin: 0;
+  margin-bottom: 29px;
   padding-left: 90px;
 
   @media (min-width: $viewport-tablet) {
@@ -137,10 +142,13 @@
 }
 
 .catalog__item-text {
+  position: relative;
   font-family: $general-font;
   line-height: 18px;
   color: #444444;
-  width: 227px;
+  min-width: 227px;
+  margin: 0;
+  margin-bottom: 42px;
 
   @media (min-width: $viewport-tablet) {
     font-size: 16px;
@@ -151,6 +159,20 @@
 
   @media (min-width: $viewport-desktop) {
     width: 457px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 113px;
+    display: block;
+    width: 240px;
+    height: 1px;
+    background-color: #d9d9d9;
+
+    @media (min-width: $viewport-tablet) {
+      display: none;
+    }
   }
 }
 
