@@ -36,6 +36,13 @@
   }
 }
 
+
+.nav__link--catalog {
+  @media (min-width: $viewport-desktop) {
+    color: #111111;
+  }
+}
+
 .nav__list-item {
   width: 100%;
   text-align: center;

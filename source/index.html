@@ -36,16 +36,16 @@
               <span class="visually-hidden">Открыть меню</span>
             </button>
           </div>
-          <nav class="main-nav nav main-nav--open">
+          <nav class="nav nav--open">
               <ul class="nav__list">
                 <li class="nav__list-item">
-                  <a class="main-nav__link nav__link main-nav__link--current" href="index.html">Главная</a>
+                  <a class="nav__link nav__link--current" href="index.html">Главная</a>
                 </li>
                 <li class="nav__list-item">
-                  <a class="main-nav__link nav__link" href="catalog.html">Каталог продукции</a>
+                  <a class="nav__link" href="catalog.html">Каталог продукции</a>
                 </li>
                 <li class="nav__list-item">
-                  <a class="main-nav__link nav__link" href="#">Подбор программы</a>
+                  <a class="nav__link" href="#">Подбор программы</a>
                 </li>
               </ul>
           </nav>
@@ -95,47 +95,49 @@
         </li>
       </ul>
     </section>
-    <section class="live-example">
-      <h2 class="live-example__title">Живой пример</h2>
-      <p class="live-example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой
-        обычный корм на Cat Energy Slim. Отличный результат
-        без изнуряющих тренировок! При этом он не менял своих
-        привычек и по-прежнему спит по 16 часов в день.</p>
-      <div class="live-example__wrapper">
-        <ul class="live-example__facts-list">
-          <li class="live-example__facts-item">
-            <div class="live-example__facts-field">
-              <span class="live-example__facts-legend">Снижение веса</span>
-              <span class="live-example__facts-text">5 КГ</span>
-            </div>
-          </li>
-          <li class="live-example__facts-item">
-            <div class="live-example__facts-field">
-              <span class="live-example__facts-legend live-example__facts-legend--long">Затрачено времени</span>
-              <span class="live-example__facts-text">60 ДНЕЙ</span>
-            </div>
-          </li>
-        </ul>
-        <div class="live-example__cost-wrap">
-          <span class="live-example__cost-title">Затраты на питание:</span>
-          <span class="live-example__cost-price">15 000 РУБ.</span>
+    <div class="live-example-container">
+      <section class="live-example container">
+        <h2 class="live-example__title">Живой пример</h2>
+        <p class="live-example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой
+          обычный корм на Cat Energy Slim. Отличный результат
+          без изнуряющих тренировок! При этом он не менял своих
+          привычек и по-прежнему спит по 16 часов в день.</p>
+        <div class="live-example__wrapper">
+          <ul class="live-example__facts-list">
+            <li class="live-example__facts-item">
+              <div class="live-example__facts-field">
+                <span class="live-example__facts-legend">Снижение веса</span>
+                <span class="live-example__facts-text">5 КГ</span>
+              </div>
+            </li>
+            <li class="live-example__facts-item">
+              <div class="live-example__facts-field">
+                <span class="live-example__facts-legend live-example__facts-legend--long">Затрачено времени</span>
+                <span class="live-example__facts-text">60 ДНЕЙ</span>
+              </div>
+            </li>
+          </ul>
+          <div class="live-example__cost-wrap">
+            <span class="live-example__cost-title">Затраты на питание:</span>
+            <span class="live-example__cost-price">15 000 РУБ.</span>
+          </div>
         </div>
-      </div>
-      <div class="live-example__slider slider">
-        <picture>
-          <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/cat-fat-tablet(desktop)@1x.png 1x, images/cat-fat-tablet(desktop)@2x.png 2x">
-          <img class="live-example__slider-image-one slider__image-one" src="images/cat-fat-mobile@1x.png" srcset="images/cat-fat-mobile@2x.png 2x" alt="Полный котик" width="280" height="256">
-        </picture>
-        <picture>
-          <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/cat-slim-tablet(desktop)@1x.png 1x, images/cat-slim-tablet(desktop)@2x.png 2x">
-          <img class="live-example__slider-image-two slider__image-two" src="images/cat-slim-mobile@1x.png" srcset="images/cat-slim-mobile@2x.png 2x" alt="Худой котик" width="280" height="256">
-        </picture>
-        <div class="live-example__slider-range">
-          <div class="live-example__slider-bar"></div>
-          <button class="live-example__toggle" type="button"><span class="visually-hidden">Кнопка слайдера</span></button>
+        <div class="live-example__slider slider">
+          <picture>
+            <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/cat-fat-tablet(desktop)@1x.png 1x, images/cat-fat-tablet(desktop)@2x.png 2x">
+            <img class="live-example__slider-image-one slider__image-one" src="images/cat-fat-mobile@1x.png" srcset="images/cat-fat-mobile@2x.png 2x" alt="Полный котик" width="280" height="256">
+          </picture>
+          <picture>
+            <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/cat-slim-tablet(desktop)@1x.png 1x, images/cat-slim-tablet(desktop)@2x.png 2x">
+            <img class="live-example__slider-image-two slider__image-two" src="images/cat-slim-mobile@1x.png" srcset="images/cat-slim-mobile@2x.png 2x" alt="Худой котик" width="280" height="256">
+          </picture>
+          <div class="live-example__slider-range">
+            <div class="live-example__slider-bar"></div>
+            <button class="live-example__toggle" type="button"><span class="visually-hidden">Кнопка слайдера</span></button>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
     <section class="map">
       <h2 class="visually-hidden">Адрес главного штаба кэт энерджи</h2>
       <div class="map__card">

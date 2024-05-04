@@ -1,6 +1,5 @@
 .live-example {
   position: relative;
-  background-color: #eaeaea;
   font-family: $headers-font;
   padding: 25px 20px 40px;
 
@@ -17,14 +16,9 @@
     }
   }
 
-  @media (min-width: $viewport-tablet) {
-    background-image: linear-gradient(#ffffff 619px, #eaeaea 61px);
-  }
-
   @media (min-width: $viewport-desktop) {
     display: grid;
     grid-template-columns: 880px 560px;
-    background-image: linear-gradient(#ffffff 150px, #f2f2f2 150px);
   }
 }
 
