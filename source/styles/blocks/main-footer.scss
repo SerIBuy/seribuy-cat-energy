@@ -39,15 +39,20 @@
 
 .main-footer__academy-logo-text-link {
   text-decoration: none;
-}
-
-.main-footer__academy-logo-text {
   font-size: 16px;
   line-height: 16px;
   color: #444444;
 
+  &:hover + .main-footer__academy-logo-picture-link .main-footer__academy-logo-svg {
+    fill: #68b738;
+  }
+
   &:active {
     opacity: 0.3;
+  }
+
+  &:active + .main-footer__academy-logo-picture-link .main-footer__academy-logo-svg {
+    fill: rgba(104, 183, 56, 0.3);
   }
 }
 
