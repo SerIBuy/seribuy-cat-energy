@@ -2,12 +2,6 @@
   position: relative;
   font-family: $headers-font;
   background-color: inherit;
-  margin-bottom: 20px;
-  z-index: 1;
-
-  @media (min-width: $viewport-tablet) {
-    margin-bottom: 40px;
-  }
 }
 
 .catalog__list {

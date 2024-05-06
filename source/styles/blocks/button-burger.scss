@@ -1,4 +1,4 @@
-.menu-burger {
+.button-burger {
   border: none;
   padding: 0;
   background-color: transparent;
@@ -18,14 +18,14 @@
   }
 }
 
-.menu-burger--close {
+.button-burger--close {
   background-image: url("../../icons/stack.svg#burger-close");
   background-repeat: no-repeat;
   width: 18px;
   height: 18px;
 }
 
-.menu-burger--open {
+.button-burger--open {
   background-image: url("../../icons/stack.svg#burger-open");
   background-repeat: no-repeat;
   width: 24px;

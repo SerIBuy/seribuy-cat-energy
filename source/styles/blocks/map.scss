@@ -3,7 +3,7 @@
   background-color: inherit;
 }
 
-.map-image {
+.map__image {
   display: block;
   object-fit: contain;
   width: 100%;
@@ -31,6 +31,14 @@
     left: 110px;
     padding: 60px 78px 60px 80px;
     column-gap: 87px;
+  }
+}
+
+.map__card--catalog {
+  background-color: #f2f2f2;
+
+  @media (min-width: $viewport-desktop) {
+    background-color: #ffffff;
   }
 }
 
@@ -70,8 +78,4 @@
   @media (min-width: $viewport-tablet) {
     align-self: end;
   }
-}
-
-.map__card--dark {
-  background-color: #f2f2f2;
 }

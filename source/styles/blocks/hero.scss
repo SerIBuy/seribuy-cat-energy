@@ -7,28 +7,21 @@
   background-image: image-set(url("../../images/hero-cat-mobile@1x.jpg") 1x, url("../../images/hero-cat-mobile@2x.jpg") 2x), linear-gradient(#5ea532 302px, #ffffff 302px);
   background-repeat: no-repeat;
   background-position: center 267px;
-  margin-bottom: 20px;
-  z-index: 1;
 
   @media (min-width: $viewport-tablet) {
-    background-image: none;
     align-items: start;
+    background-image: none;
     padding: 25px 30px 526px;
-    width: 708px;
-    margin: 0 auto;
   }
 
   @media (min-width: $viewport-desktop) {
-    position: relative;
     background-color: #ffffff;
     background-image: image-set(url("../../images/hero-cat-desktop@1x.jpg") 1x, url("../../images/hero-cat-desktop@2x.jpg") 2x);
     background-size: 50% auto;
     background-position: right 0;
-    min-width: 1220px;
     padding-top: 55px;
     padding-left: 110px;
     padding-bottom: 110px;
-    margin-bottom: 82px;
   }
 }
 
@@ -86,5 +79,15 @@
   @media (min-width: $viewport-desktop) {
     top: 143px;
     left: 557px;
+  }
+}
+
+.hero__main-header {
+  @media (min-width: $viewport-tablet) {
+    width: 768px;
+  }
+
+  @media (min-width: $viewport-desktop) {
+    width: 1220px;
   }
 }
