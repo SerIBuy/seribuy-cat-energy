@@ -43,7 +43,7 @@
   line-height: 16px;
   color: #444444;
 
-  &:hover + .main-footer__academy-logo-picture-link .main-footer__academy-logo-svg {
+  &:hover + .main-footer__academy-logo-picture-link .main-footer__academy-logo-svg { /* Переделать так как 3 уровня вложенности */
     fill: #68b738;
   }
 
@@ -51,7 +51,7 @@
     opacity: 0.3;
   }
 
-  &:active + .main-footer__academy-logo-picture-link .main-footer__academy-logo-svg {
+  &:active + .main-footer__academy-logo-picture-link .main-footer__academy-logo-svg { /* Переделать так как 3 уровня вложенности */
     fill: rgba(104, 183, 56, 0.3);
   }
 }
