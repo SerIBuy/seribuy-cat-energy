@@ -6,23 +6,28 @@
   font-style: normal;
   line-height: 18px;
   color: #000000;
-  background-color: #ffffff;
   margin: 0;
-}
-
-.page__hero {
-  margin-bottom: 20px;
-  z-index: 1;
+  background: linear-gradient(#ffffff 267px, #63a63c 267px, #63a63c 569px, #ffffff 569px);
 
   @media (min-width: $viewport-tablet) {
-    margin: 0 auto;
-    width: 708px;
+    background: none;
   }
 
   @media (min-width: $viewport-desktop) {
-    position: relative;
-    margin-bottom: 82px;
-    min-width: 1220px;
+    background: linear-gradient(to right, #ffffff 50%, #63a63c 50%);
+  }
+}
+
+.page__main-header {
+  width: 280px;
+  margin: 0 auto;
+
+  @media (min-width: $viewport-tablet) {
+    width: 708px;
+  }
+
+  @media (min-width: $viewport-tablet) {
+    width: 1220px;
   }
 }
 

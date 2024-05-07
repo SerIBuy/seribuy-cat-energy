@@ -15,12 +15,13 @@
   grid-template-columns: repeat(2, 140px);
   padding: 26px 20px;
   box-sizing: border-box;
-  width: 708px;
+  width: 280px;
   margin: 0 auto;
 
   @media (min-width: $viewport-tablet) {
     column-gap: 308px;
     padding: 61px 70px;
+    width: 708px;
   }
 
   @media (min-width: $viewport-desktop) {
