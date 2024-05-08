@@ -38,6 +38,10 @@
   @media (min-width: $viewport-tablet) {
     margin-bottom: 40px;
   }
+
+  @media (min-width: $viewport-desktop) {
+    padding-top: 82px;
+  }
 }
 
 .page__how-it-works {

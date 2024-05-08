@@ -37,31 +37,23 @@
   }
 }
 
-.main-footer__academy-logo-text-link {
+.main-footer__academy-logo-link {
+  display: flex;
+  align-items: center;
+  width: 280px;
+  justify-content: space-between;
   text-decoration: none;
   font-size: 16px;
   line-height: 16px;
   color: #444444;
 
-  &:hover + .main-footer__academy-logo-picture-link .main-footer__academy-logo-svg { /* Переделать так как 3 уровня вложенности */
+  &:hover .main-footer__academy-logo-svg {
     fill: #68b738;
   }
 
   &:active {
     opacity: 0.3;
   }
-
-  &:active + .main-footer__academy-logo-picture-link .main-footer__academy-logo-svg { /* Переделать так как 3 уровня вложенности */
-    fill: rgba(104, 183, 56, 0.3);
-  }
-}
-
-.main-footer__academy-logo-wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-top: 2px;
-  width: 280px;
 
   @media (min-width: $viewport-tablet) {
     width: 168px;
@@ -70,14 +62,4 @@
 
 .main-footer__academy-logo-svg {
   fill: #666666;
-}
-
-.main-footer__academy-logo-picture-link {
-  &:hover .main-footer__academy-logo-svg {
-    fill: #68b738;
-  }
-
-  &:active .main-footer__academy-logo-svg {
-    fill: rgba(104, 183, 56, 0.3);
-  }
 }
