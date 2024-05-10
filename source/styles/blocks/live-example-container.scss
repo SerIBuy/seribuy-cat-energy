@@ -1,5 +1,6 @@
 .live-example-container {
   background-color: #eaeaea;
+  width: 100%;
 
   @media (min-width: $viewport-tablet) {
     background-image: linear-gradient(#ffffff 619px, #eaeaea 61px);
