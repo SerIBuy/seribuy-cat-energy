@@ -48,7 +48,7 @@
         </ul>
     </nav>
     </div>
-      <section class="main-header__hero hero">
+      <section class="main-header__hero hero container">
         <h1 class="hero__title">Функциональное<br>питание для котов</h1>
       <p class="hero__subtitle">Занялся собой? Займись котом!</p>
       <picture>
@@ -132,7 +132,6 @@
             <img class="live-example__slider-image-two slider__image-two" src="images/cat-slim-mobile@1x.png" srcset="images/cat-slim-mobile@2x.png 2x" alt="Худой котик" width="280" height="256">
           </picture>
           <div class="live-example__slider-range">
-            <div class="live-example__slider-bar"></div>
             <button class="live-example__toggle" type="button"><span class="visually-hidden">Кнопка слайдера</span></button>
           </div>
         </div>
@@ -142,8 +141,10 @@
       <h2 class="visually-hidden">Адрес главного штаба кэт энерджи</h2>
       <div class="map__card">
         <p class="map__card-title">Приглашаем к сотрудничеству дилеров!</p>
-        <address class="map__card-adress">ул. Большая Конюшенная, д. 19/8</address>
-        <address class="map__card-town">Санкт-Петербург</address>
+        <div class="map_address-wrap">
+          <address class="map__card-adress">ул. Большая Конюшенная, д. 19/8</address>
+          <address class="map__card-town">Санкт-Петербург</address>
+        </div>
       </div>
       <iframe class="map__remote-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d499.65095500796065!2d30.32262650998442!3d59.93871593800417!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1715240796731!5m2!1sru!2sru" width="100%" height="362" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       <!-- <picture>
@@ -153,7 +154,7 @@
       </picture> -->
     </section>
   </main>
-  <footer class="main-footer">
+  <footer class="main-footer container">
     <a class="main-footer__logo-link" href="index.html">
       <span class="visually-hidden">Логотип-текст Кэт Энерджи</span>
       <svg class="main-footer__logo-link-svg" width="128" height="24" role="img">

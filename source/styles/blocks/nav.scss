@@ -69,7 +69,8 @@
   }
 }
 
-.nav__item::before {
+.nav__item::before,
+.nav__item:last-child::after {
   content: "";
   display: block;
   width: 100%;

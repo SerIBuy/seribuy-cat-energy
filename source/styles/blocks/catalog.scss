@@ -1,6 +1,8 @@
 .catalog {
   font-family: $headers-font;
   background-color: inherit;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .catalog__list {
@@ -24,6 +26,7 @@
   background-color: #f2f2f2;
   padding: 30px 20px 18px;
   width: 100%;
+  min-width: 280px;
   box-sizing: border-box;
 
   &::before {
@@ -40,7 +43,7 @@
       width: 200px;
       height: 200px;
       top: 81px;
-      left: 63%;
+      left: 62%;
     }
 
     @media (min-width: $viewport-desktop) {
@@ -65,7 +68,8 @@
   }
 
   @media (min-width: $viewport-desktop) {
-    width: 570px;
+    width: 47%;
+    min-width: 570px;
     padding: 77px 0 55px 52px;
   }
 }
@@ -138,7 +142,7 @@
   font-family: $general-font;
   line-height: 18px;
   color: #444444;
-  width: 71%;
+  width: 100%;
   min-width: 227px;
   margin-bottom: 42px;
 
@@ -146,11 +150,13 @@
     font-size: 16px;
     line-height: 24px;
     color: #000000;
-    width: 340px;
+    min-width: 340px;
+    width: 51%;
   }
 
   @media (min-width: $viewport-desktop) {
-    width: 457px;
+    min-width: 457px;
+    width: 80%;
   }
 }
 

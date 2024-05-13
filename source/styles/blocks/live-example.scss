@@ -4,6 +4,7 @@
   padding-top: 25px;
   padding-bottom: 40px;
   box-sizing: border-box;
+  width: 100%;
 
   &::before {
     @media (min-width: $viewport-tablet) and (max-width: $viewport-desktop) {
@@ -44,14 +45,14 @@
 .live-example__text {
   font-family: $general-font;
   color: #444444;
-  width: 280px;
+  width: 100%;
   margin-bottom: 20px;
+  min-width: 280px;
 
   @media (min-width: $viewport-tablet) {
     font-size: 16px;
     line-height: 24px;
     margin-bottom: 55px;
-    width: 100%;
   }
 
   @media (min-width: $viewport-desktop) {
@@ -198,30 +199,45 @@
 
 .live-example__slider-range {
   position: absolute;
-  top: 10px;
-  left: 30px;
-}
+  top: 0;
+  left: 140px;
 
-.live-example__slider-bar {
-  position: absolute;
-  width: 4px;
-  height: 256px;
-  border-radius: 2px;
-  background-color: #666666;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 4px;
+    height: 256px;
+    border-radius: 2px;
+    background-color: #666666;
+  }
+
+  &:hover::before {
+    background-color: #68b738;
+  }
+
+  &:hover::before .live-example-toggle {
+    background-color: #68b738;
+  }
 }
 
 .live-example__toggle {
   position: absolute;
-  top: 100px;
+  top: 108px;
   left: -18px;
   border: none;
-  background-color: transparent;
-  background-image: url("../../icons/stack.svg#live-example-toggle");
-  background-repeat: no-repeat;
+  background-color: #68b738;
+  mask-image: url("../../icons/stack.svg#live-example-toggle");
+  mask-repeat: no-repeat;
   width: 40px;
   height: 40px;
 }
 
+.live-example__slider-image-one {
+  mask-image: linear-gradient(to right, #eaeaea 50%, transparent 50%);
+}
+
 .live-example__slider-image-two {
-  display: none;
+  mask-image: linear-gradient(to right, transparent 140px, #eaeaea 100px);
+  position: absolute;
+  left: 0;
 }
