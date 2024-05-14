@@ -248,13 +248,15 @@
         <button class="button button-general button-general--subscribe" type="submit">Подписаться</button>
       </form>
     </section>
-    <section class="page__map map">
+    <section class="map">
       <h2 class="visually-hidden">Адрес главного штаба кэт энерджи</h2>
-      <div class="map__card map__card--catalog">
+        <div class="map__card map__card--catalog">
         <p class="map__card-title">Приглашаем к сотрудничеству дилеров!</p>
-        <address class="map__card-adress">ул. Большая Конюшенная, д. 19/8</address>
-        <address class="map__card-town">Санкт-Петербург</address>
-      </div>
+        <div class="map_address-wrap">
+          <address class="map__card-adress">ул. Большая Конюшенная, д. 19/8</address>
+          <address class="map__card-town">Санкт-Петербург</address>
+        </div>
+        </div>
       <picture>
         <source width="1440" height="400" type="image/png" media="(min-width: 1440px)" srcset="images/map-desktop@1x.png 1x, images/map-desktop@2x.png 2x">
         <source width="768" height="400" type="image/png" media="(min-width: 768px)" srcset="images/map-tablet@1x.png 1x, images/map-tablet@2x.png 2x">
@@ -262,7 +264,7 @@
       </picture>
     </section>
   </main>
-  <footer class="main-footer">
+  <footer class="main-footer container">
     <a class="main-footer__logo-link" href="index.html">
       <span class="visually-hidden">Логотип-текст Кэт Энерджи</span>
       <svg class="main-footer__logo-link-svg" width="128" height="24" role="img">

@@ -3,13 +3,13 @@
   background-color: #68b738;
   text-align: center;
   padding-block: 10px;
+  width: 100%;
 }
 
 .button-general--find-programm {
   margin-top: 3px;
-  width: 100%;
-  min-width: 280px;
   max-width: 370px;
+  min-width: 280px;
 
   @media (min-width: $viewport-tablet) {
     font-size: 20px;
@@ -24,6 +24,7 @@
   grid-area: 3 / 1 / 4 / 4;
   padding: 10px 109px;
   margin-top: 17px;
+  min-width: 250px;
 
   @media (min-width: $viewport-tablet) {
     padding: 10px 94px;
