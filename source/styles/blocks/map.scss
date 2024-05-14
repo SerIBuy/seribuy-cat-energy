@@ -26,6 +26,7 @@
 
 .map__remote-map {
   display: block;
+  width: 100%;
 
   @media (min-width: $viewport-tablet) {
     height: 400px;
