@@ -3,6 +3,9 @@
   font-weight: 400;
   background-color: #ffffff;
   padding-bottom: 40px;
+  min-width: 320px;
+  max-width: 520px;
+  margin: 0 auto;
 }
 
 .subscribe__title {
@@ -21,7 +24,7 @@
   display: flex;
   flex-direction: column;
 
-  @media (min-width: $viewport-desktop) {
+  @media (min-width: $viewport-tablet) {
     display: grid;
     grid-template-columns: 376px 256px;
   }

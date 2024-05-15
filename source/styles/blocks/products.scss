@@ -1,5 +1,12 @@
 .products {
   background-color: #ffffff;
+  min-width: 320px;
+  max-width: 520px;
+  margin: 0 auto;
+
+  @media (min-width: $viewport-tablet) {
+    max-width: 1439px;
+  }
 }
 
 .products__title {
@@ -35,7 +42,6 @@
   display: grid;
   grid-template-columns: 50%;
   margin-top: 20px;
-  margin-bottom: 25px;
   box-sizing: border-box;
 
   &::before {
@@ -73,7 +79,7 @@
   box-sizing: border-box;
   background-image: url("../../icons/stack.svg#products-plus");
   background-repeat: no-repeat;
-  background-position: 50% -51px;
+  background-position: 50% -130px;
   background-size: 30px;
 
   &::after {
@@ -89,10 +95,10 @@
   }
 
   @media (min-width: $viewport-tablet) {
+    margin-top: 104px;
     border: 2px solid #f2f2f2;
     box-sizing: border-box;
     background-size: 50px;
-    height: 429px;
   }
 }
 

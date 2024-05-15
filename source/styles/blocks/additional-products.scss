@@ -1,5 +1,12 @@
 .additional-products {
   background-color: #ffffff;
+  min-width: 320px;
+  max-width: 520px;
+  margin: 0 auto;
+
+  @media (min-width: $viewport-tablet) {
+    max-width: 800px;
+  }
 }
 
 .additional-products__title {
@@ -21,6 +28,10 @@
   flex-direction: column;
   gap: 32px;
   margin-bottom: 54px;
+
+  @media (min-width: $viewport-tablet) {
+    max-width: 800px;
+  }
 }
 
 .additional-products__item {
