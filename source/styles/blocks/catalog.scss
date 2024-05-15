@@ -10,14 +10,19 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
+  min-width: 280px;
+  max-width: 520px;
+  margin: 0 auto;
 
   @media (min-width: $viewport-tablet) {
     gap: 30px;
+    max-width: 972px;
   }
 
   @media (min-width: $viewport-desktop) {
     flex-direction: row;
     gap: 80px;
+    max-width: 1500px;
   }
 }
 
@@ -26,7 +31,6 @@
   background-color: #f2f2f2;
   padding: 30px 20px 18px;
   width: 100%;
-  min-width: 280px;
   box-sizing: border-box;
 
   &::before {
@@ -42,8 +46,9 @@
     @media (min-width: $viewport-tablet) {
       width: 200px;
       height: 200px;
-      top: 81px;
-      left: 62%;
+      top: 92px;
+      left: initial;
+      right: 65px;
     }
 
     @media (min-width: $viewport-desktop) {
@@ -63,13 +68,11 @@
   }
 
   @media (min-width: $viewport-tablet) {
-    width: 100%;
-    padding: 77px 0 53px 52px;
+    padding: 77px 52px 53px;
   }
 
   @media (min-width: $viewport-desktop) {
     width: 47%;
-    min-width: 570px;
     padding: 77px 0 55px 52px;
   }
 }
@@ -85,7 +88,8 @@
     width: 140px;
     height: 194px;
     top: 70px;
-    left: 67%;
+    left: initial;
+    right: 93px;
   }
 
   @media (min-width: $viewport-desktop) {
@@ -107,7 +111,8 @@
     width: 268px;
     height: 112px;
     top: 135px;
-    left: 420px;
+    left: initial;
+    right: 29px;
   }
 
   @media (min-width: $viewport-desktop) {
@@ -155,7 +160,6 @@
   }
 
   @media (min-width: $viewport-desktop) {
-    min-width: 457px;
     width: 80%;
   }
 }
