@@ -1,5 +1,6 @@
 .slider {
   position: relative;
+  display: grid;
   width: 280px;
 
   @media (min-width: $viewport-tablet) {
@@ -21,6 +22,7 @@
   background-color: #666666;
   width: 4px;
   height: 257px;
+  z-index: 4;
 
   &::before {
     content: "";
@@ -32,7 +34,11 @@
     mask-repeat: no-repeat;
     width: 24px;
     height: 18px;
-    z-index: 2;
+    z-index: 5;
+
+    @media (min-width: $viewport-tablet) {
+      top: 249px;
+    }
   }
 
   &::after {
@@ -46,6 +52,10 @@
     border: 2px solid  #666666;
     border-radius: 50%;
     z-index: 1;
+
+    @media (min-width: $viewport-tablet) {
+      top: 236px;
+    }
   }
 
   &:hover,
@@ -65,14 +75,31 @@
   &:active::after {
     border-color: #5eaa2f;
   }
+
+  @media (min-width: $viewport-tablet) {
+    height: 512px;
+    left: 278px;
+  }
 }
 
-.slider__image-one {
-  mask-image: linear-gradient(to right, #eaeaea 50%, transparent 50%);
+.slider__image {
+  display: block;
 }
 
-.slider__image-two {
-  mask-image: linear-gradient(to right, transparent 140px, #eaeaea 140px);
-  position: absolute;
-  left: 0;
+.slider__image-wrapper {
+  grid-area: 1 / 1 / 2 / 2;
+  overflow: hidden;
+}
+
+.slider__image-wrapper--over {
+  z-index: 2;
+  background-color: #eaeaea;
+
+  @media (min-width: $viewport-tablet) {
+    background-image: linear-gradient(#ffffff 195px, #eaeaea 195px);
+  }
+
+  @media (min-width: $viewport-desktop) {
+    background-image: linear-gradient(#ffffff 125px, #f2f2f2 125px);
+  }
 }
