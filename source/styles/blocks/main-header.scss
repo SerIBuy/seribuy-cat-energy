@@ -49,11 +49,13 @@
 
   @media (min-width: $viewport-tablet) {
     justify-content: start;
+    min-width: 0;
     width: 174px;
     margin: 0;
+    padding-inline: 0;
   }
 
-  @media (min-width: $viewport-tablet) {
+  @media (min-width: $viewport-desktop) {
     width: 202px;
   }
 }
@@ -94,6 +96,10 @@
 
 .main-header__logo-link--picture {
   margin-right: 55px;
+
+  @media (min-width: $viewport-tablet) {
+    margin-right: 13px;
+  }
 }
 
 .main-header__logo-image {

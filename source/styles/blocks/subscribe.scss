@@ -6,6 +6,14 @@
   min-width: 320px;
   max-width: 520px;
   margin: 0 auto;
+
+  @media (min-width: $viewport-tablet) {
+    max-width: 800px;
+  }
+
+  @media (min-width: $viewport-tablet) {
+    max-width: 1500px;
+  }
 }
 
 .subscribe__title {
@@ -26,7 +34,14 @@
 
   @media (min-width: $viewport-tablet) {
     display: grid;
-    grid-template-columns: 376px 256px;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 auto;
+    padding-inline: 38px;
+    max-width: 900px;
+  }
+
+  @media (min-width: $viewport-desktop) {
+    min-width: 752px;
   }
 }
 
@@ -37,6 +52,7 @@
   text-align: center;
 
   @media (min-width: $viewport-tablet) {
+    grid-area: 1 / 1 / 2 / 3;
     font-size: 24px;
     line-height: 32px;
   }
@@ -49,10 +65,21 @@
 .subscribe__input {
   margin-bottom: 16px;
   border: 1px solid #cdcdcd;
+  box-sizing: border-box;
   padding: 13px;
   font-family: $headers-font;
   font-size: 20px;
   line-height: 30px;
   text-transform: uppercase;
   color: #444444;
+  min-width: 280px;
+
+  @media (min-width: $viewport-tablet) {
+    margin-bottom: 0;
+    min-width: 376px;
+  }
+
+  @media (min-width: $viewport-desktop) {
+    min-width: 496px;
+  }
 }

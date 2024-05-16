@@ -2,10 +2,15 @@
   background-color: #ffffff;
   min-width: 320px;
   max-width: 520px;
+  width: 100%;
   margin: 0 auto;
 
   @media (min-width: $viewport-tablet) {
     max-width: 800px;
+  }
+
+  @media (min-width: $viewport-desktop) {
+    max-width: 1500px;
   }
 }
 
@@ -32,12 +37,53 @@
   @media (min-width: $viewport-tablet) {
     max-width: 800px;
   }
+
+  @media (min-width: $viewport-desktop) {
+    max-width: 1000px;
+    margin-top: 12px;
+  }
 }
 
 .additional-products__item {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
+    top: -13px;
+    height: 1px;
+    width: 100%;
+    background-color: #cdcdcd;
+  }
+
   @media (min-width: $viewport-tablet) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    row-gap: 25px;
+  }
+
+  @media (min-width: $viewport-desktop) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.additional-products__item:last-child::after {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 120px;
+  height: 1px;
+  width: 100%;
+  background-color: #cdcdcd;
+
+  @media (min-width: $viewport-tablet) {
+    top: 100px;
+  }
+
+  @media (min-width: $viewport-desktop) {
+    top: 60px;
   }
 }
 
@@ -53,6 +99,7 @@
   @media (min-width: $viewport-tablet) {
     font-size: 20px;
     line-height: 20px;
+    margin-bottom: 0;
   }
 }
 
@@ -64,6 +111,14 @@
   @media (min-width: $viewport-tablet) {
     justify-content: end;
     gap: 49px;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $viewport-desktop) {
+    justify-content: space-between;
+    gap: 112px;
+    margin-right: 40px;
+    min-width: 285px;
   }
 }
 
@@ -103,6 +158,11 @@
       left: 78px;
       top: 57px;
     }
+
+    @media (min-width: $viewport-desktop) {
+      left: 50%;
+      top: 57px;
+    }
   }
 
   @media (min-width: $viewport-tablet) {
@@ -117,6 +177,9 @@
 
   @media (min-width: $viewport-desktop) {
     background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), image-set(url("../../images/cat-case-desktop@1x.jpg") 1x, url("../../images/cat-case-desktop@2x.jpg") 2x);
+    width: 245px;
+    min-height: 288px;
+    margin-left: 81px;
   }
 }
 
@@ -131,5 +194,18 @@
   @media (min-width: $viewport-tablet) {
     padding: 71px  125px 69px 421px;
     text-align: left;
+  }
+
+  @media (min-width: $viewport-desktop) {
+    padding: 185px 42px 43px;
+    text-align: center;
+    width: 161px;
+  }
+}
+
+.additional-products__wrapper {
+  @media (min-width: $viewport-desktop) {
+    display: flex;
+    justify-content: space-between;
   }
 }
