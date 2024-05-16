@@ -39,9 +39,12 @@
 .main-header__header {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   padding-top: 13px;
   padding-bottom: 15px;
-  width: 280px;
+  min-width: 280px;
+  max-width: 520px;
+  padding-inline: 20px;
   margin: 0 auto;
 
   @media (min-width: $viewport-tablet) {
@@ -71,10 +74,6 @@
 }
 
 .main-header__logo-link {
-  display: flex;
-  align-items: center;
-  gap: 56px;
-
   &:hover,
   &:focus-visible {
     opacity: 0.8;
@@ -91,6 +90,10 @@
   @media (min-width: $viewport-desktop) {
     gap: 14px;
   }
+}
+
+.main-header__logo-link--picture {
+  margin-right: 55px;
 }
 
 .main-header__logo-image {
