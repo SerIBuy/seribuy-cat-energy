@@ -1,5 +1,9 @@
 .nav {
   display: none;
+
+  @media (min-width: $viewport-desktop) {
+    width: calc(50% - 134px);
+  }
 }
 
 .nav--open {
@@ -10,11 +14,11 @@
   @include list-style-reset();
   display: flex;
   flex-direction: column;
+  width: 100%;
 
   @media (min-width: $viewport-tablet) {
     flex-flow: wrap;
     justify-content: end;
-    min-width: 430px;
   }
 
   @media (min-width: $viewport-tablet) {
