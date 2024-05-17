@@ -100,11 +100,12 @@
   }
 
   @media (min-width: $viewport-tablet) {
-    margin-top: 104px;
     border: 2px solid #f2f2f2;
     box-sizing: border-box;
     background-size: 60px;
     background-position: 50% -130px;
+    align-self: end;
+    padding-top: 0;
   }
 
   @media (min-width: $viewport-desktop) {
@@ -115,6 +116,14 @@
 
 .products__image-link {
   grid-area: 1 / 1 / 3 / 2;
+
+  @media (min-width: $viewport-tablet) {
+    margin-bottom: 22px;
+  }
+
+  @media (min-width: $viewport-desktop) {
+    margin-bottom: 12px;
+  }
 }
 
 .products__title-link,
@@ -140,7 +149,11 @@
   @media (min-width: $viewport-tablet) {
     text-align: center;
     width: 135px;
-    margin-bottom: 20px;
+    margin-bottom: 21px;
+  }
+
+  @media (min-width: $viewport-tablet) {
+    margin-bottom: 23px;
   }
 }
 
@@ -163,19 +176,17 @@
   grid-template-columns: repeat(2, 1fr);
   grid-area: 2 / 2 / 3 / 3;
   align-items: center;
+  margin-bottom: 17px;
 
   @media (min-width: $viewport-tablet) {
-    width: 100%;
-    min-width: 250px;
+    width: 250px;
     row-gap: 12px;
-    margin-bottom: 32px;
+    margin-bottom: 37px;
   }
 
-  @media (min-width: $viewport-tablet) {
-    width: 100%;
-    min-width: 169px;
+  @media (min-width: $viewport-desktop) {
+    width: 169px;
     row-gap: 12px;
-    margin-bottom: 32px;
   }
 }
 
@@ -185,6 +196,10 @@
 
 .products__item-details-name {
   position: relative;
+
+  &:nth-of-type(2) {
+    padding-block: 2px;
+  }
 
   @media (min-width: $viewport-tablet) {
     &::after {
@@ -209,24 +224,32 @@
   margin: 0;
   padding-top: 78px;
   margin-bottom: 8px;
+  text-align: center;
+  text-transform: uppercase;
 
   @media (min-width: $viewport-tablet) {
     padding-top: 160px;
     margin-bottom: 23px;
   }
 
-  @media (min-width: $viewport-tablet) {
-    padding-top: 120px;
-    margin-bottom: 23px;
+  @media (min-width: $viewport-desktop) {
+    padding-top: 150px;
+    margin-bottom: 26px;
   }
 }
 
 .products__more-text {
   margin-bottom: 21px;
+  text-align: center;
 
   @media (min-width: $viewport-tablet) {
     line-height: 18px;
     margin-bottom: 82px;
+    width: 170px;
+  }
+
+  @media (min-width: $viewport-desktop) {
+    margin-bottom: 90px;
   }
 }
 
@@ -242,7 +265,7 @@
     height: 210px;
   }
 
-  @media (min-width: $viewport-tablet) {
+  @media (min-width: $viewport-desktop) {
     width: 169px;
   }
 }
