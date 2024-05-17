@@ -1,5 +1,10 @@
 .how-it-works {
-  width: 100%;
+  box-sizing: border-box;
+  min-width: 320px;
+  // max-width: 767px;
+  // display: flex;
+  // flex-direction: column;
+  // align-items: center;
 }
 
 .how-it-works__title {
@@ -10,6 +15,7 @@
   line-height: 40px;
   margin-bottom: 40px;
   margin-top: 20px;
+  align-self: start;
 
   @media (min-width: $viewport-tablet) {
     font-size: 60px;
@@ -23,7 +29,8 @@
   flex-direction: column;
   counter-reset: list-number 0;
   gap: 6.25vw;
-  width: 100%;
+  min-width: 280px;
+  max-width: 520px;
 
   @media (min-width: $viewport-tablet) {
     flex-flow: wrap;

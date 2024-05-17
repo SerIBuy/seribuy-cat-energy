@@ -48,11 +48,11 @@
   box-sizing: border-box;
 
   &::before {
+    content: "";
     position: absolute;
     top: -20px;
-    left: -20;
-    content: "";
-    width: calc(100% + 40px);
+    left: -100vw;
+    width: 200vw;
     height: 1px;
     background-color: #ebebeb;
 
@@ -88,8 +88,9 @@
 
   &::after {
     content: "";
-    width: calc(100% + 40px);
     height: 1px;
+    left: -100vw;
+    width: 200vw;
     background-color: #ebebeb;
     margin-top: 25px;
 
@@ -134,6 +135,7 @@
 .products__title-link {
   width: 76px;
   margin-bottom: 14px;
+  grid-area: 1 / 2 / 2 / 3;
 
   @media (min-width: $viewport-tablet) {
     text-align: center;
