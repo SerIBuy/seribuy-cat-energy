@@ -24,7 +24,7 @@
   display: flex;
   flex-direction: column;
   counter-reset: list-number 0;
-  gap: 6.25vw;
+  gap: 20px;
   width: 100%;
   min-width: 280px;
   max-width: 520px;
@@ -46,6 +46,7 @@
   display: flex;
   align-items: center;
   width: 100%;
+  min-height: 60px;
   counter-increment: list-number 1;
 
   &::before {

@@ -2,7 +2,7 @@
   color: #ffffff;
   background-color: #68b738;
   text-align: center;
-  padding-inline: 30px;
+  padding-inline: 10px;
 
   &:hover {
     background-color: #5eaa2f;
@@ -14,9 +14,9 @@
 }
 
 .button-general--find-programm {
-  margin-top: 3px;
-  min-width: 280px;
+  width: 280px;
   padding-block: 10px;
+  box-sizing: border-box;
 
   @media (min-width: $viewport-tablet) {
     font-size: 20px;

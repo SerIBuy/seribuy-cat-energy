@@ -19,6 +19,7 @@
 }
 
 .main-header__wrapper {
+  position: relative;
   min-width: 320px;
 
   @media (min-width: $viewport-tablet) {
@@ -41,7 +42,7 @@
   @media (min-width: $viewport-tablet) {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    gap: 80px;
   }
 }
 
@@ -50,17 +51,17 @@
   align-items: center;
   justify-content: space-between;
   padding-top: 13px;
-  padding-bottom: 15px;
   width: 280px;
   padding-inline: 20px;
   margin: 0 auto;
 
   @media (min-width: $viewport-tablet) {
     justify-content: start;
-    min-width: 0;
     width: 174px;
     margin: 0;
     padding-inline: 0;
+    padding-top: 0;
+    gap: 11px;
   }
 
   @media (min-width: $viewport-desktop) {
@@ -92,21 +93,13 @@
   &:active {
     opacity: 0.6;
   }
-
-  @media (min-width: $viewport-tablet) {
-    gap: 13px;
-  }
-
-  @media (min-width: $viewport-desktop) {
-    gap: 14px;
-  }
 }
 
 .main-header__logo-link--picture {
   margin-right: 55px;
 
   @media (min-width: $viewport-tablet) {
-    margin-right: 13px;
+    margin-right: 0;
   }
 }
 

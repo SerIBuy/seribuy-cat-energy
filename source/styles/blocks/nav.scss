@@ -1,6 +1,10 @@
 .nav {
   display: none;
 
+  @media (min-width: $viewport-tablet) {
+    width: 451px;
+  }
+
   @media (min-width: $viewport-desktop) {
     width: calc(50% - 134px);
   }
@@ -19,10 +23,7 @@
   @media (min-width: $viewport-tablet) {
     flex-flow: wrap;
     justify-content: end;
-  }
-
-  @media (min-width: $viewport-tablet) {
-    min-width: 480px;
+    gap: 5px;
   }
 }
 
@@ -33,6 +34,7 @@
 }
 
 .nav__link {
+  position: relative;
   display: block;
   text-decoration: none;
   text-transform: uppercase;
@@ -40,7 +42,7 @@
   font-size: 20px;
   line-height: 20px;
   color: #000000;
-  padding: 22px 10px 24px;
+  padding: 22px 10px 23px;
 
   &:hover,
   &:focus-visible {
@@ -54,6 +56,7 @@
   @media (min-width: $viewport-tablet) {
     font-size: 18px;
     line-height: 24px;
+    padding: 13px 14px;
   }
 
   @media (min-width: $viewport-desktop) {
@@ -64,11 +67,10 @@
 }
 
 .nav__item {
-  width: 100%;
   text-align: center;
 
-  @media (min-width: $viewport-tablet) {
-    width: auto;
+  &:last-child .nav__link {
+    padding-right: 0;
   }
 }
 
@@ -88,9 +90,11 @@
 .nav__link-current::after {
   @media (min-width: $viewport-tablet) {
     content: "";
-    display: block;
-    width: 100%;
+    position: absolute;
+    width: calc(100% - 26px);
     height: 2px;
+    left: 13px;
+    top: 37px;
     background-color: #68b738;
     margin-top: 8px;
   }
