@@ -3,6 +3,14 @@
   background-color: #68b738;
   text-align: center;
   padding-inline: 30px;
+
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 .button-general--find-programm {
@@ -40,6 +48,14 @@
   padding: 10px 20px;
   background-color: #f2f2f2;
   color: #444444;
+
+  &:hover {
+    background-color: #ebebeb;
+  }
+
+  &:active {
+    color: #444444;
+  }
 }
 
 .button-general--order-add {
@@ -62,11 +78,11 @@
   background-color: #68b738;
   text-transform: uppercase;
   cursor: pointer;
-  min-width: 280px;
+  width: 280px;
   min-height: 56px;
   box-sizing: border-box;
 
   @media (min-width: $viewport-tablet) {
-    min-width: 256px;
+    width: 256px;
   }
 }

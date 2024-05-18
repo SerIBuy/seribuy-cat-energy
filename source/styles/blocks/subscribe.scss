@@ -3,17 +3,6 @@
   font-weight: 400;
   background-color: #ffffff;
   padding-bottom: 40px;
-  min-width: 320px;
-  max-width: 520px;
-  margin: 0 auto;
-
-  @media (min-width: $viewport-tablet) {
-    max-width: 800px;
-  }
-
-  @media (min-width: $viewport-desktop) {
-    max-width: 1500px;
-  }
 }
 
 .subscribe__title {
@@ -25,6 +14,11 @@
   @media (min-width: $viewport-tablet) {
     font-size: 32px;
     line-height: 32px;
+    padding-left: 40px;
+  }
+
+  @media (min-width: $viewport-desktop) {
+    padding-left: 0;
   }
 }
 
@@ -36,12 +30,11 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     margin: 0 auto;
-    padding-inline: 38px;
-    max-width: 900px;
+    width: 632px;
   }
 
   @media (min-width: $viewport-desktop) {
-    min-width: 752px;
+    width: 752px;
   }
 }
 
@@ -55,16 +48,18 @@
     grid-area: 1 / 1 / 2 / 3;
     font-size: 24px;
     line-height: 32px;
+    width: 632px;
   }
 
   @media (min-width: $viewport-desktop) {
     grid-column: 1 / -1;
+    width: 752px;
   }
 }
 
 .subscribe__input {
   margin-bottom: 16px;
-  border: 1px solid #cdcdcd;
+  border: 1px solid #e7e7e7;
   box-sizing: border-box;
   padding: 13px;
   font-family: $headers-font;
@@ -73,6 +68,21 @@
   text-transform: uppercase;
   color: #444444;
   min-width: 280px;
+  height: 56px;
+  outline: none;
+
+  &::placeholder {
+    opacity: 1;
+  }
+
+  &:hover {
+    border-color: #cdcdcd;
+  }
+
+  &:focus-visible {
+    border-width: 2px;
+    border-color: #444444;
+  }
 
   @media (min-width: $viewport-tablet) {
     margin-bottom: 0;

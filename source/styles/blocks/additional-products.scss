@@ -22,6 +22,10 @@
     line-height: 32px;
     padding-left: 40px;
   }
+
+  @media (min-width: $viewport-desktop) {
+    padding-left: 0;
+  }
 }
 
 .additional-products__list {

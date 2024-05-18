@@ -47,8 +47,8 @@
     content: "";
     position: absolute;
     top: -20px;
-    left: -100vw;
-    width: 200vw;
+    left: calc(((100vw - 280px) / 2) * -1);
+    width: 100vw;
     height: 1px;
     background-color: #ebebeb;
 
@@ -85,8 +85,8 @@
   &::after {
     content: "";
     height: 1px;
-    left: -100vw;
-    width: 200vw;
+    left: calc(((100vw - 280px) / 2) * -1);
+    width: 100vw;
     background-color: #ebebeb;
     margin-top: 25px;
 
