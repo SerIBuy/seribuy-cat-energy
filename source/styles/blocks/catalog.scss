@@ -1,7 +1,6 @@
 .catalog {
   font-family: $headers-font;
   background-color: inherit;
-  width: 100%;
   box-sizing: border-box;
 }
 
@@ -10,9 +9,6 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
-  min-width: 280px;
-  // max-width: 520px;
-  margin: 0 auto;
 
   @media (min-width: $viewport-tablet) {
     gap: 30px;

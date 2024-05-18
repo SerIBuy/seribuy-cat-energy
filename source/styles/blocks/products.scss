@@ -1,9 +1,5 @@
 .products {
   background-color: #ffffff;
-  min-width: 320px;
-  max-width: 520px;
-  width: 100%;
-  margin: 0 auto;
 
   @media (min-width: $viewport-tablet) {
     max-width: 1439px;
