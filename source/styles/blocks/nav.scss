@@ -26,6 +26,12 @@
   }
 }
 
+.nav__list--catalog .nav__link {
+  @media (min-width: $viewport-desktop) {
+    color: #111111;
+  }
+}
+
 .nav__link {
   display: block;
   text-decoration: none;
@@ -54,13 +60,6 @@
     font-size: 20px;
     line-height: 30px;
     color: #ffffff;
-  }
-}
-
-
-.nav__link--catalog {
-  @media (min-width: $viewport-desktop) {
-    color: #111111;
   }
 }
 
