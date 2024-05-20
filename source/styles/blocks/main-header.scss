@@ -5,6 +5,7 @@
   @media (min-width: $viewport-tablet) {
     padding-top: 25px;
     padding-inline: 30px;
+    min-width: 708px;
   }
 
   @media (min-width: $viewport-desktop) {
@@ -44,6 +45,11 @@
     align-items: center;
     gap: 80px;
   }
+
+  @media (min-width: $viewport-desktop) {
+    // gap: 527px;
+    justify-content: space-between;
+  }
 }
 
 .main-header__header {
@@ -76,6 +82,7 @@
   @media (min-width: $viewport-tablet) {
     margin: 0 auto;
     width: 708px;
+    box-sizing: border-box;
   }
 
   @media (min-width: $viewport-desktop) {

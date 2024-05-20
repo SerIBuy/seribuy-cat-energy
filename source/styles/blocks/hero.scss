@@ -17,7 +17,7 @@
 
   @media (min-width: $viewport-desktop) {
     padding-left: 80px;
-    padding-bottom: 169px;
+    padding-bottom: 185px;
   }
 }
 
@@ -38,7 +38,7 @@
   }
 
   @media (min-width: $viewport-desktop) {
-    padding-top: 83px;
+    padding-top: 44px;
   }
 }
 
@@ -60,6 +60,7 @@
 
 .hero__image {
   display: block;
+  margin-bottom: 3px;
 
   @media (min-width: $viewport-tablet) {
     position: absolute;

@@ -7,10 +7,12 @@
 
   @media (min-width: $viewport-tablet) {
     padding-inline: 30px;
+    padding-block: 55px;
   }
 
   @media (min-width: $viewport-desktop) {
     padding-inline: 110px;
+    padding-block: 66px;
   }
 }
 
@@ -26,6 +28,7 @@
     justify-content: space-between;
     gap: 0;
     width: 708px;
+    min-height: 37px;
   }
 
   @media (min-width: $viewport-desktop) {
@@ -47,11 +50,20 @@
   &:active .main-footer__logo-link-svg {
     fill: #6b6b6b;
   }
+
+  @media (min-width: $viewport-tablet) {
+    margin-bottom: 0;
+    margin-right: 36px;
+  }
 }
 
 .main-footer__socials {
   margin: 0;
   margin-bottom: 40px;
+
+  @media (min-width: $viewport-tablet) {
+    margin-bottom: 0;
+  }
 }
 
 .main-footer__academy-logo-link {
