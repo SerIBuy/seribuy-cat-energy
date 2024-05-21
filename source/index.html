@@ -54,11 +54,13 @@
       <section class="main-header__hero hero">
         <h1 class="hero__title">Функциональное<br>питание для котов</h1>
       <p class="hero__subtitle">Занялся собой? Займись котом!</p>
-      <picture>
-        <source width="552" height="499" type="image/png" media="(min-width: 1440px)" srcset="images/hero-image-desktop@1x.png 1x, images/hero-image-desktop@2x.png 2x">
-        <source width="709" height="609" type="image/png" media="(min-width: 768px)" srcset="images/hero-image-tablet@1x.png 1x, images/hero-image-tablet@2x.png 2x">
-        <img class="hero__image" src="images/hero-image-mobile@1x.png" srcset="images/hero-image-mobile@2x.png 2x" alt="Баночка продукции Кэт Энерджи" width="280" height="270">
+      <div class="hero__image-wrap">
+        <picture>
+          <source width="552" height="499" type="image/png" media="(min-width: 1440px)" srcset="images/hero-image-desktop@1x.png 1x, images/hero-image-desktop@2x.png 2x">
+          <source width="709" height="609" type="image/png" media="(min-width: 768px)" srcset="images/hero-image-tablet@1x.png 1x, images/hero-image-tablet@2x.png 2x">
+          <img class="hero__image" src="images/hero-image-mobile@1x.png" srcset="images/hero-image-mobile@2x.png 2x" alt="Баночка продукции Кэт Энерджи" width="280" height="270">
       </picture>
+      </div>
       <a class="button button-general button-general--find-programm button-general--mobile" href="#">Подобрать программу</a>
     </section>
     </div>
@@ -109,16 +111,12 @@
           <div class="live-example__facts-wrapper">
           <ul class="live-example__facts-list">
             <li class="live-example__facts-item">
-              <div class="live-example__facts-field">
-                <span class="live-example__facts-legend">Снижение веса</span>
-                <span class="live-example__facts-text">5 КГ</span>
-              </div>
+              <span class="live-example__facts-legend">Снижение веса</span>
+              <span class="live-example__facts-text">5 КГ</span>
             </li>
             <li class="live-example__facts-item">
-              <div class="live-example__facts-field">
-                <span class="live-example__facts-legend live-example__facts-legend--long">Затрачено времени</span>
-                <span class="live-example__facts-text">60 ДНЕЙ</span>
-              </div>
+              <span class="live-example__facts-legend live-example__facts-legend--long">Затрачено времени</span>
+              <span class="live-example__facts-text">60 ДНЕЙ</span>
             </li>
           </ul>
           <div class="live-example__cost-wrap">

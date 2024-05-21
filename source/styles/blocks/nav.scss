@@ -2,11 +2,11 @@
   display: none;
 
   @media (min-width: $viewport-tablet) {
-    width: 451px;
+    min-width: 451px;
   }
 
   @media (min-width: $viewport-desktop) {
-    width: 490px;
+    max-width: 600px;
   }
 }
 

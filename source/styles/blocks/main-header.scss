@@ -12,10 +12,10 @@
     background-color: #ffffff;
     background-image: image-set(url("../../images/hero-cat-full-desktop@1x.jpg") 1x, url("../../images/hero-cat-full-desktop@2x.jpg") 2x), linear-gradient(to right, #62a53b, #62a53b);
     background-repeat: no-repeat;
-    background-size: contain;
     background-position: 50vw 0;
     padding-top: 55px;
     padding-inline: 110px;
+    padding-bottom: 50px;
   }
 }
 
@@ -47,7 +47,6 @@
   }
 
   @media (min-width: $viewport-desktop) {
-    // gap: 527px;
     justify-content: space-between;
   }
 }
@@ -87,7 +86,8 @@
 
   @media (min-width: $viewport-desktop) {
     position: relative;
-    min-width: 1220px;
+    min-width: 1000px;
+    margin: 0;
   }
 }
 

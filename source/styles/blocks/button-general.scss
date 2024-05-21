@@ -24,6 +24,14 @@
     z-index: 1;
     width: 244px;
     padding-block: 14px;
+    grid-area: 3 / 1 / 4 / 2;
+    margin-left: 90px;
+    margin-top: 29px;
+  }
+
+  @media (min-width: $viewport-desktop) {
+    margin-top: 0;
+    margin-left: 80px;
   }
 }
 
