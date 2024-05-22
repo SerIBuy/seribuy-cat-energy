@@ -185,6 +185,7 @@
   text-decoration: none;
   color: #000000;
   min-width: 170px;
+  max-width: calc(100% - 24px);
 
   @media (min-width: $viewport-tablet) {
     font-size: 20px;
@@ -199,6 +200,7 @@
 
   &::after {
     content: "";
+    flex-shrink: 0;
     width: 24px;
     height: 12px;
     mask-image: url("../../icons/stack.svg#catalog-arrow-small");

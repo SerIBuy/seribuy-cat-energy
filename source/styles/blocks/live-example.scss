@@ -4,14 +4,15 @@
   background-color: #eaeaea;
 
   @media (min-width: $viewport-tablet) {
-    background-image: linear-gradient(#ffffff 619px, #eaeaea 619px);
-    padding-bottom: 101px;
-    padding-top: 45px;
+    background-color: #ffffff;
+    padding-bottom: 0;
   }
 
   @media (min-width: $viewport-desktop) {
-    background-image: linear-gradient(#ffffff 182px, #f2f2f2 182px);
-    padding-bottom: 40px;
+    display: flex;
+    gap: 160px;
+    padding-bottom: 75px;
+    background-image: linear-gradient(#ffffff 163px, #f2f2f2 163px);
   }
 }
 
@@ -33,9 +34,10 @@
   }
 
   @media (min-width: $viewport-desktop) {
-    display: grid;
-    grid-template-columns: 660px 560px;
-    margin-bottom: 35px;
+    padding-right: 0;
+    padding-left: calc((100vw - 1220px) / 2);
+    margin: 0;
+    width: calc(((100vw - 1220px) / 2) + 500px);
   }
 }
 
@@ -54,6 +56,7 @@
 
   @media (min-width: $viewport-desktop) {
     margin-bottom: 146px;
+    max-width: 500px;
   }
 }
 
@@ -73,7 +76,7 @@
 
   @media (min-width: $viewport-desktop) {
     margin-bottom: 69px;
-    width: 434px;
+    width: 433px;
   }
 }
 
@@ -83,8 +86,8 @@
   @media (min-width: $viewport-tablet) {
     display: flex;
     align-items: center;
-    // gap: 167px;
     margin-bottom: 104px;
+    gap: 80px;
   }
 
   @media (min-width: $viewport-desktop) {
@@ -172,7 +175,7 @@
 }
 
 .live-example__cost-wrap {
-  min-width: 188px;
+  width: 188px;
   margin: 0 auto;
 
   @media (min-width: $viewport-tablet) {
@@ -186,6 +189,7 @@
   @media (min-width: $viewport-desktop) {
     width: auto;
     flex-direction: row;
+    align-items: start;
     gap: 65px;
   }
 }
@@ -207,10 +211,28 @@
   }
 }
 
+.live-example__cost-title {
+  @media (min-width: $viewport-tablet) {
+    max-width: 174px;
+  }
+}
+
+.live-example__cost-price {
+  @media (min-width: $viewport-tablet) {
+    max-width: 90px;
+  }
+}
+
 .live-example__slider {
-  margin: 0 auto;
+  @media (min-width: $viewport-tablet) {
+    background-image: linear-gradient(#ffffff 151px, #eaeaea 151px);
+    padding-bottom: 101px;
+  }
 
   @media (min-width: $viewport-desktop) {
-    margin-top: 2px;
+    background-image: linear-gradient(#ffffff 138px, #f2f2f2 138px);
+    padding-top: 0;
+    padding-bottom: 0;
+    width: 560px;
   }
 }
