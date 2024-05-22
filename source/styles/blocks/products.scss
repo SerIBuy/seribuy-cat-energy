@@ -1,6 +1,22 @@
 .products {
+  position: relative;
   background-color: #ffffff;
   padding-top: 13px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 0;
+    left: calc(((100vw - 320px) / 2) * -1);
+    width: 100vw;
+    height: 1px;
+    background-color: #ebebeb;
+
+    @media (min-width: $viewport-tablet) {
+      display: none;
+    }
+  }
 
   @media (min-width: $viewport-tablet) {
     padding-top: 38px;

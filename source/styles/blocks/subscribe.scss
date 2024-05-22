@@ -83,6 +83,11 @@
   height: 56px;
   outline: none;
 
+  &--error { /* класс для обозначения ошибки ввода в input */
+    border-width: 2px;
+    border-color: #ff8282;
+  }
+
   &::placeholder {
     opacity: 1;
   }

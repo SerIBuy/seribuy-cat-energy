@@ -54,8 +54,8 @@
 .main-header__header {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   padding-top: 13px;
+  padding-bottom: 15px;
   width: 280px;
   padding-inline: 20px;
   margin: 0 auto;
@@ -67,6 +67,7 @@
     padding-inline: 0;
     padding-top: 0;
     gap: 11px;
+    padding-bottom: 0;
   }
 
   @media (min-width: $viewport-desktop) {
