@@ -12,17 +12,17 @@
 
 .contacts__map-wrapper {
   width: 100%;
-  background-image: image-set(url("../../images/map-mobile@1x.png") 1x, url("../../images/map-mobile@2x.png") 2x);
+  background-image: image-set(url("../../images/map-mobile@1x.webp") 1x, url("../../images/map-mobile@2x.webp") 2x, url("../../images/map-mobile@1x.png") 1x, url("../../images/map-mobile@2x.png") 2x);
   background-repeat: no-repeat;
   background-size: cover;
 
   @media (min-width: $viewport-tablet) {
-    background-image: image-set(url("../../images/map-tablet@1x.png") 1x, url("../../images/map-tablet@2x.png") 2x);
+    background-image: image-set(url("../../images/map-tablet@1x.webp") 1x, url("../../images/map-tablet@2x.webp") 2x, url("../../images/map-tablet@1x.png") 1x, url("../../images/map-tablet@2x.png") 2x);
   }
 
   @media (min-width: $viewport-desktop) {
     grid-area: 1 / 1 / 4 / 4;
-    background-image: image-set(url("../../images/map-desktop@1x.png") 1x, url("../../images/map-desktop@2x.png") 2x);
+    background-image: image-set(url("../../images/map-desktop@1x.webp") 1x, url("../../images/map-desktop@2x.webp") 2x, url("../../images/map-desktop@1x.png") 1x, url("../../images/map-desktop@2x.png") 2x);
   }
 }
 

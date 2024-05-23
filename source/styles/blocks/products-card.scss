@@ -69,6 +69,15 @@
 .products-card__image-link {
   grid-area: 1 / 1 / 3 / 2;
 
+  &:hover,
+  &:focus-visible {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
   @media (min-width: $viewport-tablet) {
     margin-bottom: 22px;
   }
@@ -99,6 +108,15 @@
   width: 76px;
   margin-bottom: 14px;
   grid-area: 1 / 2 / 2 / 3;
+
+  &:hover,
+  &:focus-visible {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 
   @media (min-width: $viewport-tablet) {
     text-align: center;

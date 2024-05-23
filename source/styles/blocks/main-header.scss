@@ -12,7 +12,7 @@
 
   @media (min-width: $viewport-desktop) {
     background-color: #ffffff;
-    background-image: image-set(url("../../images/hero-cat-full-desktop@1x.jpg") 1x, url("../../images/hero-cat-full-desktop@2x.jpg") 2x), linear-gradient(to right, #62a53b, #62a53b);
+    background-image: image-set(url("../../images/hero-cat-full-desktop@1x.webp") type("image/webp") 1x, url("../../images/hero-cat-full-desktop@2x.webp") type("image/webp") 2x, url("../../images/hero-cat-full-desktop@1x.jpg") 1x, url("../../images/hero-cat-full-desktop@2x.jpg") 2x), linear-gradient(to right, #62a53b, #62a53b);
     background-repeat: no-repeat;
     background-position: 50vw 0;
     padding-top: 55px;
