@@ -3,7 +3,7 @@
   flex-direction: column;
   align-items: center;
   font-family: $headers-font;
-  background-image: image-set(url("../../images/hero-cat-mobile@1x.webp") 1x, url("../../images/hero-cat-mobile@2x.webp") 2x, url("../../images/hero-cat-mobile@1x.jpg") 1x, url("../../images/hero-cat-mobile@2x.jpg") 2x), linear-gradient(to right, #65a73e 50%, #62a53b 50%);
+  background-image: image-set(url("../../images/hero-cat-mobile@1x.webp") type("image/webp") 1x, url("../../images/hero-cat-mobile@2x.webp") type("image/webp") 2x, url("../../images/hero-cat-mobile@1x.jpg") type("image/jpeg") 1x, url("../../images/hero-cat-mobile@2x.jpg") type("image/jpeg") 2x), linear-gradient(to right, #65a73e 50%, #62a53b 50%);
   background-repeat: no-repeat;
   background-position: center 0;
   background-size: auto 63%;
@@ -32,6 +32,7 @@
   text-align: center;
   margin-bottom: 25px;
   padding-inline: 20px;
+  color: #ffffff;
   z-index: 1;
 
   @media (min-width: $viewport-tablet) {
@@ -59,6 +60,7 @@
   margin: 0;
   margin-bottom: 29px;
   padding-inline: 20px;
+  color: #ffffff;
   z-index: 1;
 
   @media (min-width: $viewport-tablet) {
