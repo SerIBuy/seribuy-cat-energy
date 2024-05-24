@@ -1,12 +1,10 @@
 .main-header {
   background-color: #ffffff;
-  padding-bottom: 20px;
 
   @media (min-width: $viewport-tablet) {
-    padding-top: 25px;
+    padding-block: 25px;
     padding-inline: 30px;
     min-width: 708px;
-    padding-bottom: 0;
   }
 
   @media (min-width: $viewport-desktop) {
@@ -16,7 +14,7 @@
     background-position: 50vw 0;
     padding-top: 55px;
     padding-inline: 110px;
-    padding-bottom: 50px;
+    padding-bottom: 51px;
   }
 }
 
