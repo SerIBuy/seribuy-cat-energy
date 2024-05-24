@@ -4,13 +4,10 @@
   flex-direction: column;
   align-items: center;
   font-family: $headers-font;
-<<<<<<< HEAD
   background-image: image-set(url("../../images/hero-cat-mobile@1x.webp") type("image/webp") 1x, url("../../images/hero-cat-mobile@2x.webp") type("image/webp") 2x, url("../../images/hero-cat-mobile@1x.jpg") type("image/jpeg") 1x, url("../../images/hero-cat-mobile@2x.jpg") type("image/jpeg") 2x), linear-gradient(to right, #65a73e 50%, #62a53b 50%);
   background-repeat: no-repeat;
   background-position: center 0;
   background-size: auto 63%;
-=======
->>>>>>> 0abb11054631478303ee678d5142d7785fff8488
   padding-top: 27px;
 
   @media (min-width: $viewport-tablet) {
