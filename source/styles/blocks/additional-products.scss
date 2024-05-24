@@ -1,13 +1,5 @@
 .additional-products {
   background-color: #ffffff;
-
-  @media (min-width: $viewport-tablet) {
-    max-width: 800px;
-  }
-
-  @media (min-width: $viewport-desktop) {
-    max-width: 1500px;
-  }
 }
 
 .additional-products__title {
