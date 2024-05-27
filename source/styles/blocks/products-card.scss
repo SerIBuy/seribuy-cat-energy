@@ -1,7 +1,5 @@
 .products-card {
   position: relative;
-  min-width: 280px;
-  width: 100%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   box-sizing: border-box;
@@ -26,7 +24,6 @@
     flex-direction: column;
     align-items: center;
     background-image: linear-gradient(#ffffff 81px, #f2f2f2 81px);
-    min-width: 0;
     width: 324px;
     padding: 10px 37px 40px;
   }
