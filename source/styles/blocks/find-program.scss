@@ -19,6 +19,14 @@
       display: none;
     }
   }
+
+  @media (min-width: $viewport-tablet) {
+    padding-top: 65px;
+  }
+
+  @media (min-width: $viewport-desktop) {
+    padding-top: 23px;
+  }
 }
 
 .find-program__title {
@@ -30,10 +38,14 @@
 
   @media (min-width: $viewport-tablet) {
     padding-left: 40px;
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 54px;
   }
 
   @media (min-width: $viewport-desktop) {
     padding-left: 0;
+    margin-bottom: 55px;
   }
 }
 
@@ -46,6 +58,9 @@
 
   @media (min-width: $viewport-tablet) {
     padding-left: 40px;
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 66px;
   }
 
   @media (min-width: $viewport-desktop) {
@@ -56,4 +71,8 @@
 .form-find-program__input-text::-webkit-inner-spin-button,
 .form-find-program__input-text::-webkit-outer-spin-button {
   appearance: none;
+}
+
+.form-find-program__input-text {
+  appearance: textfield;
 }
