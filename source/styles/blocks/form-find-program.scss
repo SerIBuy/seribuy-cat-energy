@@ -1,0 +1,277 @@
+.form-find-program__label,
+.form-find-program__input-text,
+.form-find-program__text-about-cat {
+  text-transform: uppercase;
+  font-family: $headers-font;
+  font-size: 16px;
+  line-height: 18px;
+  color: #444444;
+
+  @media (min-width: $viewport-tablet) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.form-find-program__subtitle {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 26px;
+
+  &--special-width {
+    width: 187px;
+
+    @media (min-width: $viewport-tablet) {
+      width: fit-content;
+    }
+  }
+
+  @media (min-width: $viewport-tablet) {
+    margin-left: 40px;
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  @media (min-width: $viewport-desktop) {
+    margin-left: 0;
+  }
+}
+
+.form-find-program__field-required {
+  font-family: $general-font;
+  line-height: 16px;
+  padding-top: 21px;
+  padding-bottom: 32px;
+  text-align: center;
+
+  @media (min-width: $viewport-tablet) {
+    display: inline-block;
+    font-size: 16px;
+  }
+}
+
+.form-find-program__field-wrap {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+}
+
+.form-find-program__field {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+
+  @media (min-width: $viewport-tablet) {
+    margin-inline: 40px;
+  }
+
+  @media (min-width: $viewport-desktop) {
+    margin-inline: 0;
+  }
+}
+
+.form-find-program__field--one {
+  gap: 14px;
+  margin-bottom: 46px;
+}
+
+.form-find-program__field--two {
+  gap: 13px;
+  margin-bottom: 45px;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    background-color: #d9d9d9;
+    height: 1px;
+    width: 100vw;
+    left: calc(((100vw - 300px) / 2) * -1);
+
+    @media (min-width: $viewport-tablet) {
+      display: none;
+    }
+  }
+
+  &::before {
+    top: -22px;
+  }
+
+  &::after {
+    top: 140px;
+  }
+
+  @media (min-width: $viewport-tablet) {
+    border: 1px solid #e7e7e7;
+    padding: 23px 27px;
+  }
+}
+
+.form-find-program__field--three {
+  gap: 14px;
+  margin-bottom: 24px;
+
+  @media (min-width: $viewport-desktop) {
+    display: grid;
+    grid-template-columns: 569px 572px;
+    gap: 80px;
+  }
+}
+
+.form-find-program__field--four {
+  gap: 13px;
+  margin-bottom: 34px;
+
+  @media (min-width: $viewport-tablet) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (min-width: $viewport-desktop) {
+    grid-template-columns: repeat(4, 221px);
+    gap: 104px;
+  }
+}
+
+.form-find-program__input-text {
+  flex-grow: 1;
+  box-sizing: border-box;
+  padding: 14px;
+  border: 1px solid #e7e7e7;
+  height: 45px;
+
+  &:user-invalid {
+    border-width: 2px;
+    border-color: #ff8282;
+  }
+
+  &:hover {
+    border-color: #cdcdcd;
+  }
+
+  &:focus-visible {
+    border-width: 2px;
+    border-color: #444444;
+  }
+
+  @media (min-width: $viewport-tablet) {
+    height: 52px;
+  }
+}
+
+.form-find-program__text-about-cat {
+  width: 280px;
+  min-height: 150px;
+  padding: 14px;
+  box-sizing: border-box;
+  resize: none;
+  border: 1px solid #e7e7e7;
+
+  @media (min-width: $viewport-tablet) {
+    margin-left: 40px;
+    width: 628px;
+    min-height: 175px;
+    padding: 11px 20px;
+  }
+
+  @media (min-width: $viewport-desktop) {
+    margin-left: 0;
+    width: 100%;
+  }
+}
+
+.form-find-program__one-two-wrap {
+  @media (min-width: $viewport-desktop) {
+    display: grid;
+    grid-template-columns: repeat(2, 570px);
+    gap: 80px;
+  }
+}
+
+.form-find-program__radio-label,
+.form-find-program__checkbox-label {
+  color: #444444;
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+
+  @media (min-width: $viewport-tablet) {
+    gap: 20px;
+  }
+}
+
+.form-find-program__radio-label::before,
+.form-find-program__checkbox-label::before {
+  content: "";
+  width: 30px;
+  height: 30px;
+  box-sizing: border-box;
+  border: 1px solid #cdcdcd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @media (min-width: $viewport-tablet) {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.form-find-program__radio-label::before {
+  border-radius: 50%;
+}
+
+.form-find-program__input-radio:enabled:hover ~ .form-find-program__radio-label::before,
+.form-find-program__input-check:enabled:hover ~ .form-find-program__checkbox-label::before {
+  border-color: #bababa;
+}
+
+.form-find-program__input-radio:enabled:focus-visible ~ .form-find-program__radio-label,
+.form-find-program__input-check:enabled:focus-visible ~ .form-find-program__checkbox-label {
+  outline: 2px solid #444444;
+  outline-offset: 2px;
+}
+
+.form-find-program__input-radio:disabled ~ .form-find-program__radio-label::before,
+.form-find-program__input-radio:disabled ~ .form-find-program__radio-label,
+.form-find-program__input-check:disabled ~ .form-find-program__checkbox-label::before,
+.form-find-program__input-check:disabled ~ .form-find-program__checkbox-label {
+  border-color: rgba(186, 186, 186, 0.3);
+  color: rgba(34, 34, 34, 0.3);
+}
+
+.form-find-program__input-radio:checked ~ .form-find-program__radio-label::after {
+  content: "";
+  position: absolute;
+  top: 9px;
+  left: 9px;
+  width: 13px;
+  height: 13px;
+  background-color: #68b738;
+  border-radius: 50%;
+
+  @media (min-width: $viewport-tablet) {
+    width: 18px;
+    height: 18px;
+    top: 11px;
+    left: 11px;
+  }
+}
+
+.form-find-program__input-check:checked ~ .form-find-program__checkbox-label::after {
+  content: "";
+  position: absolute;
+  background-image: url("../../icons/stack.svg#form-arrow");
+  width: 18px;
+  height: 14px;
+  left: 6px;
+
+  @media (min-width: $viewport-tablet) {
+    width: 24px;
+    height: 18px;
+    left: 9px;
+  }
+}

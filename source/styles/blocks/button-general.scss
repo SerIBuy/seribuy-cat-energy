@@ -10,6 +10,7 @@
   background-color: #68b738;
   text-align: center;
   padding-inline: 10px;
+  cursor: pointer;
 
   &:hover {
     background-color: #5eaa2f;
@@ -106,12 +107,33 @@
   color: #ffffff;
   background-color: #68b738;
   text-transform: uppercase;
-  cursor: pointer;
   width: 280px;
   min-height: 56px;
   box-sizing: border-box;
 
   @media (min-width: $viewport-tablet) {
     width: 256px;
+  }
+}
+
+.button-general--find-program-sent {
+  border: none;
+  padding-block: 10px;
+  width: 100%;
+
+  @media (min-width: $viewport-tablet) {
+    display: inline-block;
+    width: 284px;
+    margin-left: 40px;
+    margin-right: 60px;
+    padding-block: 14px;
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  @media (min-width: $viewport-desktop) {
+    margin-left: 0;
+    width: 570px;
+    margin-right: 80px;
   }
 }

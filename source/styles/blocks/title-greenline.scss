@@ -48,3 +48,20 @@
     }
   }
 }
+
+.title-greenline--form-tablet::before {
+  @media (min-width: $viewport-tablet) {
+    left: calc(((100vw - 628px) / 2) * -1);
+  }
+
+  @media (min-width: $viewport-desktop) {
+    left: calc(((100vw - 1220px) / 2) * -1);
+  }
+}
+
+.title-greenline--form-tablet::after {
+  @media (min-width: $viewport-tablet) {
+    width: calc(100% + 80px);
+    left: -40px;
+  }
+}
