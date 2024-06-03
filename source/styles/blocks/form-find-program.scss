@@ -1,0 +1,91 @@
+.form-find-program__label,
+.form-find-program__input-text,
+.form-find-program__text-about-cat {
+  text-transform: uppercase;
+  font-family: $headers-font;
+  font-size: 16px;
+  line-height: 18px;
+  color: #444444;
+}
+
+.form-find-program__subtitle {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 26px;
+
+  @media (min-width: $viewport-tablet) {
+    margin-left: 40px;
+  }
+}
+
+.form-find-program__field-required {
+  font-family: $general-font;
+  line-height: 16px;
+  padding-top: 21px;
+  padding-bottom: 32px;
+  text-align: center;
+}
+
+.form-find-program__field-wrap {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+}
+
+.form-find-program__field {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+
+  @media (min-width: $viewport-tablet) {
+    margin-inline: 40px;
+  }
+}
+
+.form-find-program__field--one {
+  gap: 14px;
+  margin-bottom: 46px;
+}
+
+.form-find-program__field--two {
+  gap: 13px;
+  margin-bottom: 45px;
+
+  @media (min-width: $viewport-tablet) {
+    border: 1px solid #e7e7e7;
+    padding: 23px 27px;
+  }
+}
+
+.form-find-program__field--three {
+  gap: 14px;
+  margin-bottom: 24px;
+}
+
+.form-find-program__field--four {
+  gap: 13px;
+  margin-bottom: 34px;
+}
+
+.form-find-program__input-text {
+  flex-grow: 1;
+  box-sizing: border-box;
+  padding: 14px;
+  border: 1px solid #e7e7e7;
+}
+
+.form-find-program__text-about-cat {
+  width: 280px;
+  min-height: 150px;
+  padding: 14px;
+  box-sizing: border-box;
+  resize: none;
+  border: 1px solid #e7e7e7;
+
+  @media (min-width: $viewport-tablet) {
+    margin-left: 40px;
+    width: 628px;
+    min-height: 175px;
+    padding: 11px 20px;
+  }
+}

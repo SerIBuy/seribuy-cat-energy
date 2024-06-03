@@ -10,6 +10,7 @@
   background-color: #68b738;
   text-align: center;
   padding-inline: 10px;
+  cursor: pointer;
 
   &:hover {
     background-color: #5eaa2f;
@@ -106,7 +107,6 @@
   color: #ffffff;
   background-color: #68b738;
   text-transform: uppercase;
-  cursor: pointer;
   width: 280px;
   min-height: 56px;
   box-sizing: border-box;
@@ -114,4 +114,10 @@
   @media (min-width: $viewport-tablet) {
     width: 256px;
   }
+}
+
+.button-general--find-program-sent {
+  border: none;
+  padding-block: 10px;
+  width: 100%;
 }
