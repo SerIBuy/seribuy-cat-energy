@@ -60,43 +60,51 @@
       <h1 class="find-program__title">Подбор программы</h1>
       <p class="find-program__subscription">Заполните анкету, и мы подберем программу питания для вашего кота</p>
       <form class="find-program__form form-find-program" action="https://echo.htmlacademy.ru" method="get">
-        <div class="form-find-program__field form-find-program__field--one">
+        <div class="form-find-program__one-two-wrap">
+         <div class="form-find-program__field form-find-program__field--one">
           <div class="form-find-program__field-wrap">
             <label class="form-find-program__label" for="cat-name">ИМЯ:*</label>
             <input class="form-find-program__input-text" type="text" id="cat-name" placeholder="барсик" name="cat-name" required>
           </div>
           <div class="form-find-program__field-wrap">
             <label class="form-find-program__label" for="cat-weight">Вес (кг):*</label>
-            <input class="form-find-program__input-text" type="text" id="cat-weight" placeholder="7" name="cat-weight" required>
+            <input class="form-find-program__input-text" type="number" id="cat-weight" placeholder="7" name="cat-weight" required>
           </div>
           <div class="form-find-program__field-wrap">
             <label class="form-find-program__label" for="cat-age">Возраст (лет):</label>
-            <input class="form-find-program__input-text" type="text" id="cat-age" placeholder="7" name="cat-age">
+            <input class="form-find-program__input-text" type="number" id="cat-age" placeholder="7" name="cat-age">
           </div>
         </div>
         <div class="form-find-program__field form-find-program__field--two">
           <div class="form-find-program__field-wrap">
-            <input class="form-find-program__input-radio" type="radio" id="weight-loss" name="kind-program" value="weight-loss" checked>
-            <label class="form-find-program__label" for="weight-loss" >Похудение</label>
+            <label class="form-find-program__label" for="weight-loss">
+              <input class="form-find-program__input-radio visually-hidden" type="radio" id="weight-loss" name="kind-program" value="weight-loss" checked>
+              <span class="form-find-program__radio-label">Похудение</span>
+            </label>
           </div>
           <div class="form-find-program__field-wrap">
-            <input class="form-find-program__input-radio" type="radio" id="weight-gain" name="kind-program" value="weight-gain">
-            <label class="form-find-program__label" for="weight-gain" >Набор массы</label>
+            <label class="form-find-program__label" for="weight-gain">
+              <input class="form-find-program__input-radio visually-hidden" type="radio" id="weight-gain" name="kind-program" value="weight-gain">
+              <span class="form-find-program__radio-label">Набор массы</span>
+            </label>
           </div>
           <div class="form-find-program__field-wrap">
-            <input class="form-find-program__input-radio" type="radio" id="need-advice" name="kind-program" value="need-advice">
-            <label class="form-find-program__label" for="need-advice">Не знаю (Нужен ваш совет)</label>
+            <label class="form-find-program__label" for="need-advice">
+              <input class="form-find-program__input-radio visually-hidden" type="radio" id="need-advice" name="kind-program" value="need-advice">
+              <span class="form-find-program__radio-label">Не знаю (Нужен ваш совет)</span>
+            </label>
           </div>
+        </div>
         </div>
         <h2 class="form-find-program__subtitle">Контактные данные (владельца кота)</h2>
         <div class="form-find-program__field form-find-program__field--three">
           <div class="form-find-program__field-wrap">
             <label class="form-find-program__label" for="host-name">E-mail:*</label>
-            <input class="form-find-program__input-text" type="email" id="host-name" placeholder="kuklachev@gmail.com" name="host-name" required>
+            <input class="form-find-program__input-text form-find-program__input-text--email" type="email" id="host-name" placeholder="kuklachev@gmail.com" name="host-name" required>
           </div>
           <div class="form-find-program__field-wrap">
             <label class="form-find-program__label" for="host-phone">Телефон:*</label>
-            <input class="form-find-program__input-text" type="tel" id="host-phone" name="host-phone" placeholder="8 (960) 900-60-90" required>
+            <input class="form-find-program__input-text" type="number" id="host-phone" name="host-phone" placeholder="8 (960) 900-60-90" required>
           </div>
         </div>
         <h2 class="form-find-program__subtitle">Комментарий</h2>
@@ -104,20 +112,28 @@
         <h2 class="form-find-program__subtitle">Дополнительно</h2>
         <div class="form-find-program__field form-find-program__field--four">
           <div class="form-find-program__field-wrap">
-            <input class="form-find-program__input-check" type="checkbox" id="sugar-substitude" name="sugar-substitude" checked>
-            <label class="form-find-program__label" for="sugar-substitude">Сахарозаменитель</label>
+            <label class="form-find-program__label" for="sugar-substitude">
+              <input class="form-find-program__input-check visually-hidden" type="checkbox" id="sugar-substitude" name="sugar-substitude" checked>
+              <span class="form-find-program__checkbox-label">Сахарозаменитель</span>
+            </label>
           </div>
           <div class="form-find-program__field-wrap">
-            <input class="form-find-program__input-check" type="checkbox" id="drinking-water" name="drinking-water">
-            <label class="form-find-program__label" for="drinking-water">Питьевая вода</label>
+            <label class="form-find-program__label" for="drinking-water">
+              <input class="form-find-program__input-check visually-hidden" type="checkbox" id="drinking-water" name="drinking-water">
+              <span class="form-find-program__checkbox-label">Питьевая вода</span>
+            </label>
           </div>
           <div class="form-find-program__field-wrap">
-            <input class="form-find-program__input-check" type="checkbox" id="milk" name="milk">
-            <label class="form-find-program__label" for="milk">Молоко</label>
+            <label class="form-find-program__label" for="milk">
+              <input class="form-find-program__input-check visually-hidden" type="checkbox" id="milk" name="milk">
+              <span class="form-find-program__checkbox-label">Молоко</span>
+            </label>
           </div>
           <div class="form-find-program__field-wrap">
-            <input class="form-find-program__input-check" type="checkbox" id="vitamins" name="vitamins">
-            <label class="form-find-program__label" for="vitamins">Витамины</label>
+            <label class="form-find-program__label" for="vitamins">
+              <input class="form-find-program__input-check visually-hidden" type="checkbox" id="vitamins" name="vitamins">
+              <span class="form-find-program__checkbox-label">Витамины</span>
+            </label>
           </div>
         </div>
         <input class="button-general button-general--find-program-sent" type="submit" value="Отправить заявку">

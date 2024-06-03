@@ -31,6 +31,10 @@
   @media (min-width: $viewport-tablet) {
     padding-left: 40px;
   }
+
+  @media (min-width: $viewport-desktop) {
+    padding-left: 0;
+  }
 }
 
 .find-program__subscription {
@@ -43,4 +47,13 @@
   @media (min-width: $viewport-tablet) {
     padding-left: 40px;
   }
+
+  @media (min-width: $viewport-desktop) {
+    padding-left: 0;
+  }
+}
+
+.form-find-program__input-text::-webkit-inner-spin-button,
+.form-find-program__input-text::-webkit-outer-spin-button {
+  appearance: none;
 }

@@ -16,6 +16,10 @@
   @media (min-width: $viewport-tablet) {
     margin-left: 40px;
   }
+
+  @media (min-width: $viewport-desktop) {
+    margin-left: 0;
+  }
 }
 
 .form-find-program__field-required {
@@ -24,6 +28,10 @@
   padding-top: 21px;
   padding-bottom: 32px;
   text-align: center;
+
+  @media (min-width: $viewport-tablet) {
+    display: inline-block;
+  }
 }
 
 .form-find-program__field-wrap {
@@ -39,6 +47,10 @@
 
   @media (min-width: $viewport-tablet) {
     margin-inline: 40px;
+  }
+
+  @media (min-width: $viewport-desktop) {
+    margin-inline: 0;
   }
 }
 
@@ -60,11 +72,27 @@
 .form-find-program__field--three {
   gap: 14px;
   margin-bottom: 24px;
+
+  @media (min-width: $viewport-desktop) {
+    display: grid;
+    grid-template-columns: 569px 572px;
+    gap: 80px;
+  }
 }
 
 .form-find-program__field--four {
   gap: 13px;
   margin-bottom: 34px;
+
+  @media (min-width: $viewport-tablet) {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (min-width: $viewport-desktop) {
+    grid-template-columns: repeat(4, 221px);
+    gap: 104px;
+  }
 }
 
 .form-find-program__input-text {
@@ -88,4 +116,96 @@
     min-height: 175px;
     padding: 11px 20px;
   }
+
+  @media (min-width: $viewport-desktop) {
+    margin-left: 0;
+    width: 100%;
+  }
+}
+
+.form-find-program__one-two-wrap {
+  @media (min-width: $viewport-desktop) {
+    display: grid;
+    grid-template-columns: repeat(2, 570px);
+    gap: 80px;
+  }
+}
+
+.form-find-program__radio-label,
+.form-find-program__checkbox-label {
+  color: #444444;
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+
+  @media (min-width: $viewport-tablet) {
+    gap: 20px;
+  }
+}
+
+.form-find-program__radio-label::before,
+.form-find-program__checkbox-label::before {
+  content: "";
+  width: 30px;
+  height: 30px;
+  box-sizing: border-box;
+  border: 1px solid #cdcdcd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @media (min-width: $viewport-tablet) {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.form-find-program__radio-label::before {
+  border-radius: 50%;
+}
+
+.form-find-program__input-radio:hover ~ .form-find-program__radio-label::before,
+.form-find-program__input-radio:hover ~ .form-find-program__radio-label,
+.form-find-program__input-radio:hover ~ .form-find-program__checkbox-label::before,
+.form-find-program__input-radio:hover ~ .form-find-program__checkbox-label {
+  border-color: #bababa;
+}
+
+.form-find-program__input-radio:checked ~ .form-find-program__radio-label::after {
+  content: "";
+  position: absolute;
+  top: 9px;
+  left: 9px;
+  width: 13px;
+  height: 13px;
+  background-color: #68b738;
+  border-radius: 50%;
+
+  @media (min-width: $viewport-tablet) {
+    width: 18px;
+    height: 18px;
+    top: 11px;
+    left: 11px;
+  }
+}
+
+.form-find-program__input-check:checked ~ .form-find-program__checkbox-label::after {
+  content: "";
+  position: absolute;
+  background-image: url("../../icons/stack.svg#form-arrow");
+  width: 18px;
+  height: 14px;
+  left: 6px;
+
+  @media (min-width: $viewport-tablet) {
+    width: 24px;
+    height: 18px;
+    left: 9px;
+  }
+}
+
+.form-find-program__input-text--email:user-invalid {
+  border-width: 2px;
+  border-color: #ff8282;
 }

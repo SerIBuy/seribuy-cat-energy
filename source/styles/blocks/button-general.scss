@@ -120,4 +120,18 @@
   border: none;
   padding-block: 10px;
   width: 100%;
+
+  @media (min-width: $viewport-tablet) {
+    display: inline-block;
+    width: 284px;
+    margin-left: 40px;
+    margin-right: 60px;
+    padding-block: 14px;
+  }
+
+  @media (min-width: $viewport-desktop) {
+    margin-left: 0;
+    width: 570px;
+    margin-right: 80px;
+  }
 }
