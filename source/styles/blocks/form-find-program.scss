@@ -143,8 +143,8 @@
   height: 45px;
 
   &:user-invalid {
-    border-width: 2px;
-    border-color: #ff8282;
+    border-color: transparent;
+    outline: 2px solid #ff8282;
   }
 
   &:hover {
@@ -152,8 +152,22 @@
   }
 
   &:focus-visible {
-    border-width: 2px;
-    border-color: #444444;
+    border-color: transparent;
+    outline: 2px solid #444444;
+  }
+
+  &--email {
+    background-image: url("../../icons/stack.svg#form-envelope");
+    background-size: 18px 13px;
+    background-repeat: no-repeat;
+    background-position: 520px center;
+  }
+
+  &--phone {
+    background-image: url("../../icons/stack.svg#form-phone");
+    background-size: 18px 13px;
+    background-repeat: no-repeat;
+    background-position: 500px center;
   }
 
   @media (min-width: $viewport-tablet) {
