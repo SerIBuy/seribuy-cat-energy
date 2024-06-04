@@ -98,13 +98,13 @@
         </div>
         <h2 class="form-find-program__subtitle form-find-program__subtitle--special-width title-greenline title-greenline--form-tablet">Контактные данные (владельца кота)</h2>
         <div class="form-find-program__field form-find-program__field--three">
-          <div class="form-find-program__field-wrap">
-            <label class="form-find-program__label" for="host-name">E-mail:*</label>
-              <input class="form-find-program__input-text form-find-program__input-text--email" type="email" id="host-name" placeholder="kuklachev@gmail.com" name="host-name" required>
+          <div class="form-find-program__field-wrap form-find-program__field-wrap--reverse-order">
+            <input class="form-find-program__input-text form-find-program__input-text--email" type="email" id="host-name" placeholder="kuklachev@gmail.com" name="host-name" required>
+            <label class="form-find-program__label form-find-program__label--email-icon" for="host-name">E-mail:*</label>
           </div>
-          <div class="form-find-program__field-wrap">
-            <label class="form-find-program__label" for="host-phone">Телефон:*</label>
+          <div class="form-find-program__field-wrap form-find-program__field-wrap--reverse-order">
             <input class="form-find-program__input-text form-find-program__input-text--phone" type="number" id="host-phone" name="host-phone" placeholder="8 (960) 900-60-90" required>
+            <label class="form-find-program__label form-find-program__label--phone-icon" for="host-phone">Телефон:*</label>
           </div>
         </div>
         <h2 class="form-find-program__subtitle title-greenline title-greenline--form-tablet">Комментарий</h2>
@@ -136,8 +136,10 @@
             </label>
           </div>
         </div>
-        <input class="button-general button-general--find-program-sent" type="submit" value="Отправить заявку">
+        <div class="form-find-program__button-wrap">
+          <button class="button-general button-general--find-program-sent" type="submit">Отправить заявку</button>
         <p class="form-find-program__field-required">* — Обязательные поля</p>
+        </div>
       </form>
     </section>
     <section class="contacts">

@@ -13,10 +13,59 @@
   }
 }
 
+.form-find-program__label--email-icon {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: 250px;
+    mask-image: url("../../icons/stack.svg#form-envelope");
+    background-color: #222222;
+    width: 18px;
+    height: 13px;
+
+    @media (min-width: $viewport-tablet) {
+      top: 9px;
+      left: 600px;
+    }
+
+    @media (min-width: $viewport-desktop) {
+      left: 540px;
+    }
+  }
+}
+
+.form-find-program__label--phone-icon {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 255px;
+    mask-image: url("../../icons/stack.svg#form-phone");
+    background-color: #222222;
+    width: 15px;
+    height: 15px;
+
+    @media (min-width: $viewport-tablet) {
+      top: 9px;
+      left: 600px;
+    }
+
+    @media (min-width: $viewport-desktop) {
+      left: 545px;
+    }
+  }
+}
+
 .form-find-program__subtitle {
   font-weight: 400;
   font-size: 24px;
   line-height: 26px;
+  max-width: 260px;
 
   &--special-width {
     width: 187px;
@@ -30,23 +79,39 @@
     margin-left: 40px;
     font-size: 36px;
     line-height: 36px;
+    max-width: 650px;
   }
 
   @media (min-width: $viewport-desktop) {
     margin-left: 0;
+    max-width: 1100px;
   }
 }
 
 .form-find-program__field-required {
   font-family: $general-font;
   line-height: 16px;
-  padding-top: 21px;
-  padding-bottom: 32px;
-  text-align: center;
+  margin: 0;
 
   @media (min-width: $viewport-tablet) {
-    display: inline-block;
     font-size: 16px;
+  }
+}
+
+.form-find-program__button-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 21px;
+  margin-bottom: 32px;
+
+  @media (min-width: $viewport-tablet) {
+    flex-direction: row;
+    column-gap: 60px;
+  }
+
+  @media (min-width: $viewport-desktop) {
+    column-gap: 80px;
   }
 }
 
@@ -54,6 +119,10 @@
   display: flex;
   align-items: center;
   gap: 13px;
+
+  &--reverse-order {
+    flex-direction: row-reverse;
+  }
 }
 
 .form-find-program__field {
@@ -83,12 +152,11 @@
   &::before,
   &::after {
     content: "";
-    position: absolute;
     display: block;
     background-color: #d9d9d9;
     height: 1px;
     width: 100vw;
-    left: calc(((100vw - 300px) / 2) * -1);
+    transform: translateX(calc(((100vw - 300px) / 2) * -1));
 
     @media (min-width: $viewport-tablet) {
       display: none;
@@ -156,18 +224,13 @@
     outline: 2px solid #444444;
   }
 
-  &--email {
-    background-image: url("../../icons/stack.svg#form-envelope");
-    background-size: 18px 13px;
-    background-repeat: no-repeat;
-    background-position: 520px center;
+  &--email:focus-visible ~ .form-find-program__label--email-icon::before,
+  &--phone:focus-visible ~ .form-find-program__label--phone-icon::before {
+    background-color: #68b738;
   }
 
-  &--phone {
-    background-image: url("../../icons/stack.svg#form-phone");
-    background-size: 18px 13px;
-    background-repeat: no-repeat;
-    background-position: 500px center;
+  &--email:user-invalid ~ .form-find-program__label--email-icon::before {
+    background-color: #ff8282;
   }
 
   @media (min-width: $viewport-tablet) {
@@ -224,9 +287,7 @@
   height: 30px;
   box-sizing: border-box;
   border: 1px solid #cdcdcd;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-shrink: 0;
 
   @media (min-width: $viewport-tablet) {
     width: 40px;
@@ -260,7 +321,6 @@
 .form-find-program__input-radio:checked ~ .form-find-program__radio-label::after {
   content: "";
   position: absolute;
-  top: 9px;
   left: 9px;
   width: 13px;
   height: 13px;
@@ -270,7 +330,6 @@
   @media (min-width: $viewport-tablet) {
     width: 18px;
     height: 18px;
-    top: 11px;
     left: 11px;
   }
 }
