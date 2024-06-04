@@ -3,7 +3,7 @@
   font-family: $headers-font;
   font-weight: 400;
   color: #000000;
-  padding-top: 27px;
+  padding-top: 28px;
 
   &::before {
     content: "";
@@ -55,12 +55,14 @@
   line-height: 18px;
   margin: 0;
   margin-bottom: 39px;
+  width: 226px;
 
   @media (min-width: $viewport-tablet) {
     padding-left: 40px;
     font-size: 20px;
     line-height: 30px;
     margin-bottom: 66px;
+    width: 323px;
   }
 
   @media (min-width: $viewport-desktop) {
